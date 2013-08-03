@@ -1,0 +1,2 @@
+*/5 * * * * vnstat -u
+0 2 * * * /etc/graphs-vnstat.sh

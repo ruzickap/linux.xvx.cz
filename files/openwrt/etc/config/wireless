@@ -1,0 +1,36 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option macaddr '94:0c:6d:ac:55:ac'
+	option hwmode '11ng'
+	list ht_capab 'SHORT-GI-40'
+	list ht_capab 'DSSS_CCK-40'
+	option channel '8'
+	option country 'CZ'
+	option htmode 'HT40-'
+	option noscan '1'
+	option bursting '1'
+	option ff '1'
+	option compression '1'
+	option xr '1'
+	option ar '1'
+	option txpower '20'
+
+config wifi-iface
+	option device 'radio0'
+	option mode 'ap'
+	option ssid 'test123'
+	option network 'wifi_open'
+	option encryption 'psk2'
+	option key 'xxxxxxxx'
+	option isolate '1'
+	option macaddr '96:0C:6D:AC:55:AD'
+
+config wifi-iface
+	option device 'radio0'
+	option network 'lan'
+	option mode 'ap'
+	option ssid 'test345'
+	option encryption 'psk2+tkip+aes'
+	option key 'xxxxxxxx'
+

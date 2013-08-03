@@ -1,0 +1,2 @@
+#!/bin/sh 
+/usr/bin/digitemp_DS9097 -c/etc/digitemp.conf -a -n0 -d10 -q -s/dev/ttyUSB0 -o"PUTVAL gate/temp/temperature-%s interval=10 %N:%.2C"

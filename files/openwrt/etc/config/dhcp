@@ -1,0 +1,104 @@
+
+config dnsmasq
+	option domainneeded '1'
+	option boguspriv '1'
+	option filterwin2k '0'
+	option localise_queries '1'
+	option rebind_protection '1'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option expandhosts '1'
+	option nonegcache '0'
+	option authoritative '1'
+	option readethers '1'
+	option resolvfile '/tmp/resolv.conf.auto'
+	option domain 'xvx.cz'
+	option leasefile '/etc/dnsmasq-dhcp.leases'
+	list interface 'wifi_open'
+	list interface 'lan'
+	option enable_tftp '1'
+	option tftp_root '/tftpboot'
+	option dhcp_boot 'netbootme.kpxe'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option leasetime '12h'
+	option start '200'
+	option limit '54'
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config dhcp 'wifi_open'
+	option interface 'wifi_open'
+	option start '2'
+	option limit '253'
+	option dhcp_option '6,8.8.8.8'
+	option leasetime '1h'
+
+config host
+	option name 'peru-nb-work-wifi'
+	option ip '192.168.0.2'
+	option mac '00:26:c6:51:39:34'
+
+config host
+	option name 'andy-nb-wifi'
+	option ip '192.168.0.3'
+	option mac '74:f0:6d:93:c7:3a'
+
+config host
+	option name 'peru-nb-old-wifi'
+	option ip '192.168.0.4'
+	option mac '00:15:00:11:48:5A'
+
+config host
+	option name 'peru-android-wifi'
+	option ip '192.168.0.5'
+	option mac '94:0C:6D:AC:55:AC'
+
+config host
+	option name 'peru-android-work-wifi'
+	option ip '192.168.0.6'
+	option mac '00:90:4c:c5:00:34'
+
+config host
+	option name 'peru-palm-wifi'
+	option ip '192.168.0.7'
+	option mac '00:0b:6c:57:da:9a'
+
+config host
+	option name 'RTL8187-wifi'
+	option ip '192.168.0.8'
+	option mac '00:C0:CA:54:F5:BA'
+
+config host
+	option name 'peru-nb-work-nic'
+	option ip '192.168.0.130'
+	option mac '00:22:68:1a:14:5d'
+
+config host
+	option name 'andy-nb-nic'
+	option ip '192.168.0.131'
+	option mac '20:cf:30:31:da:b3'
+
+config host
+	option name 'peru-nb-old-nic'
+	option ip '192.168.0.132'
+	option mac '00:13:D4:D1:03:57'
+
+config host
+	option name 'peru-tv-nic'
+	option ip '192.168.0.133'
+	option mac '00:12:FB:94:1B:9A'
+
+config host
+	option name 'raspberrypi-nic'
+	option ip '192.168.0.134'
+	option mac 'b8:27:eb:8c:97:9e'
+
+config host
+	option name 'server-nic'
+	option ip '192.168.0.135'
+	option mac '00:1f:c6:e9:f5:14'
+

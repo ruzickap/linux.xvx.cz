@@ -1,0 +1,5 @@
+
+config vnstat
+	list interface 'br-lan'
+	list interface 'eth0.2'
+

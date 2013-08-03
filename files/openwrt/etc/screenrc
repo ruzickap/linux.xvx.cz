@@ -1,0 +1,6 @@
+startup_message off
+defscrollback 1000
+startup_message off
+termcapinfo xterm ti@:te@
+hardstatus alwayslastline '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+vbell off
