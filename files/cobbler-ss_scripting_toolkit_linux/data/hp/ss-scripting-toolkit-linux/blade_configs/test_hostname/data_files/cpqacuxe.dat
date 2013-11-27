@@ -1,0 +1,35 @@
+; Date captured: Wed Nov 27 21:51:14 2013
+; Version: 8.70.8.0
+
+Action= Configure
+Method= Custom
+
+
+; Controller Specifications
+; Controller HP Smart Array E200i, Firmware Version 1.86
+; SerialNumber 3H7AMK1649
+Controller= SLOT 0
+ReadCache= 50
+WriteCache= 50
+RebuildPriority= Low
+ExpandPriority= Low
+SurfaceScanMode= Idle
+SurfaceScanDelay= 15
+DriveWriteCache= Disabled
+
+; Array Specifications
+Array= A
+; Array Drive Type is SAS
+; 1I:1:1 (146 GB, SAS), 1I:1:2 (146 GB, SAS)
+Drive= 1I:1:1, 1I:1:2
+OnlineSpare= No
+
+; Logical Drive Specifications
+LogicalDrive= 1
+RAID= 1
+Size= 139979
+; SizeBlocks= 286677120
+Sectors= 32
+; Note that STRIPESIZE is deprecated and replaced by STRIPSIZE. There is no change in functionality.
+StripeSize= 128
+ArrayAccelerator= Enabled

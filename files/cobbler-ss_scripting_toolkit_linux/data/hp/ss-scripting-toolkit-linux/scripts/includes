@@ -1,0 +1,312 @@
+###
+### Include file for SmartStart Scripting Toolkit for Linux 8.40
+### Jan 2010
+###
+
+##
+## The toolkit relies on settings written to and read from shell variables
+## The default file from PXE boot defines several variables
+##
+## from the "label toolkit" section of the default file
+## including the values used in these scripts adjust 
+## accordingly for your environment
+##
+## sstk_mount=10.100.10.10:/opt/SSSTK 
+## sstk_mount_type=nfs 
+## sstk_mount_options=ro,nolock 
+## sstk_script=/scripts/deploy.sh
+##
+##
+## Variables carried over from toolkit initrd bootstrap script
+##
+## TOOLKIT
+## sstk_mount
+## 
+
+echo -e "*** Setting environment variables ***"
+
+## set time zone for settime.sh
+## EST5EDT CST6CDT MST7MDT PST8PDT
+export TZ=MET-1METDST
+
+## TOOLKIT_SERVER_IP  - gets the NFS server IP address from bootstrap settings
+export TOOLKIT_SERVER_IP="`echo ${sstk_mount} | cut -d : -f 1`"
+
+##
+## These variables define NFS mount points and data paths
+##
+
+# TOOLKIT - default home directory on RAM drive created by toolkit initrd
+export TOOLKIT=/TOOLKIT
+
+# TOOLKIT_MNTPNT - mount point for NFS_TOOLKIT_DIR on RAM drive
+export TOOLKIT_MNTPNT=/mnt/main
+
+# TOOLKIT_WRITE_DIR - remote directory to save captured data
+# TOOLKIT_WRITE_DEVICE - the device where TOOLKIT_WRITE_DIR is located (10.7.85.5:$TOOLKIT_WRITE_DIR)
+# TOOLKIT_WRITE_MNTPNT - mount point for TOOLKIT_WRITE_DEVICE on RAM drivee
+export TOOLKIT_WRITE_DIR=/data/hp/ss-scripting-toolkit-linux
+export TOOLKIT_WRITE_DEVICE=$TOOLKIT_SERVER_IP:$TOOLKIT_WRITE_DIR
+export TOOLKIT_WRITE_MNTPNT=/mnt/profiles
+export TOOLKIT_WRITE_MNTOPT=rw,nolock
+export TOOLKIT_WRITE_MNTTYPE=nfs
+
+# TOOLKIT_DATA_FILES_DIR - contains configuration files used by conrep and cpqacuxe to set system
+export TOOLKIT_DATA_FILES_DIR=${TOOLKIT_WRITE_MNTPNT}/data_files
+export TOOLKIT_IMAGE_FILES=${TOOLKIT_MNTPNT}/images
+
+# HW_DISC_FILE - data file created by hpdiscovery
+
+export HWDISC_FILE=${TOOLKIT}/hw_discovery.dat
+
+# For firmware updates
+export FIRMWARE_DIR=${TOOLKIT_MNTPNT}/firmware
+
+export PATH=${PATH}:${TOOLKIT}
+
+#
+# Mount a filesystem with a lot of visual feedback
+#
+function sstk_mount_w_feedback()
+{
+    local cmd
+    local msg=$1
+    local dev=$2
+    local dir=$3
+    local type=$4
+    local opt=$5
+
+    cmd="mount -t $type $dev $dir"
+    test -n "$opt" && cmd="$cmd -o $opt"
+    cat<<END
+
+*** $msg  ***
+ Device    : $dev
+ Directory : $dir
+ Type      : $type
+ Options   : $opt
+ Command   :
+$cmd
+
+END
+    sleep 5
+    mkdir -p $dir
+    $cmd
+    if [ $? != 0 ]; then
+       echo "ERROR: Could not mount $dev area."
+       echo "Check mount options and ensure the proper drivers are loaded."	
+       exec /bin/bash
+    fi
+}
+
+function sstk_mount
+{
+    sstk_mount_w_feedback "Mounting Toolkit Filesystem" \
+        ${sstk_mount}  \
+        ${TOOLKIT_MNTPNT}  \
+        ${sstk_mount_type} \
+        ${sstk_mount_options}
+}
+
+function sstk_unmount
+{
+    sync
+    umount -l ${TOOLKIT_MNTPNT}
+}
+
+
+#
+# Mount the TOOLKIT_WRITE_DEVICE filesystem
+#
+function sstk_mount_rwfs()
+{
+    sstk_mount_w_feedback "Mounting Writeable Filesystem" \
+        ${TOOLKIT_WRITE_DEVICE}  \
+        ${TOOLKIT_WRITE_MNTPNT}  \
+        ${TOOLKIT_WRITE_MNTTYPE} \
+        ${TOOLKIT_WRITE_MNTOPT}
+}
+
+#
+# Unmount the TOOLKIT_WRITE_DEVICE filesystem
+#
+function sstk_unmount_rwfs()
+{
+    sync
+    umount -l ${TOOLKIT_WRITE_MNTPNT}
+}
+
+#
+# Copies toolkit files locally so remote filesystem can be unmounted, etc
+#
+function sstk_copy_locally()
+{
+    echo "*** Copying over toolkit scripts and utilites into RAM drive ***"
+    mkdir -p ${TOOLKIT}
+    cp -a ${TOOLKIT_MNTPNT}/scripts/. ${TOOLKIT}
+    cp -a ${TOOLKIT_MNTPNT}/utilities/. ${TOOLKIT}
+
+    # link over to hpacucli on the toolkit media
+    rm -rf /opt/compaq/hpacucli
+    mkdir -p /opt/compaq/hpacucli/
+    ln -sf ${TOOLKIT}/hpacucli /opt/compaq/hpacucli/bld
+
+    PATH=${TOOLKIT}:${TOOLKIT}/scripts:${TOOLKIT}/utilities:$PATH
+    echo "*** Scripts will continue execution from RAM drive ***"
+}
+
+#
+# Calls the load_modules.sh script
+#
+function sstk_load_modules()
+{
+    echo ""
+    echo "*** Loading storage drivers for hardware that udev missed ***"
+    cp ${TOOLKIT}/scripts/load_modules.sh ${TOOLKIT}/
+    ./load_modules.sh
+    echo ""
+    echo "***Pausing to allow drivers to finish loading ***"
+    sleep 15
+    echo ""
+}
+
+#
+# Calls hpsum to update the firmware
+#
+function sstk_firmware_update()
+{
+    if [ ! -d "${FIRMWARE_DIR}" ] ; then
+        echo ""
+        echo "ERROR: FIRMWARE_DIR is not a directory."
+        echo ""
+        exec /bin/bash
+    fi
+
+    if [ ! -x "${FIRMWARE_DIR}/hpsum" ] ; then
+        echo ""
+        echo "ERROR: ${FIRMWARE_DIR}/hpsum does not exist, or is not an executable."
+        echo ""
+        exec /bin/bash
+    fi
+
+    if [ -z "$(ls ${FIRMWARE_DIR} | grep -i '\.scexe')" ] ; then
+        echo ""
+        echo "WARNING: ${FIRMWARE_DIR}/ does not contain any SCEXE files, no firmware updates will be applied."
+        echo ""
+        return
+    fi
+
+
+    echo "*** Upgrading System Firmware! ***"
+    echo "*** Please be patient for a few minutes ***"
+
+    CWD=$PWD
+    cd ${FIRMWARE_DIR}
+
+    # hpsum taken from the HP Firmware CD
+    # view README in the firmware directory for
+    # configuration and usage
+    export HDU_BOOTENV_SMPJTB=yes
+    ./hpsum --silent --fdt $FORCE
+    export HPSUMOUT=$?
+
+    export HDU_BOOTENV_SMPJTB=no
+
+    cd $CWD
+
+    if [ ${HPSUMOUT} = 0 ]; then
+        echo -e "  -The installation was successful.\n"
+    fi
+    if [ ${HPSUMOUT} = 1 ]; then
+        echo -e "  -The installation was successful,\n   but a reboot is required.\n"
+    fi
+    if [ ${HPSUMOUT} = 3 ]; then
+        echo -e "  -The component was current or not required.\n"
+    fi
+    if [ ${HPSUMOUT} = -1 ]; then
+        echo -e "  -A general failure occurred.\n   See the error log for details.\n"
+    fi
+    if [ ${HPSUMOUT} = -2 ]; then
+        echo -e "  -A bad input parameter was encountered.\n"
+    fi
+    if [ ${HPSUMOUT} = -3 ]; then
+        echo -e "  -The installation of the component failed.\n"
+    fi
+
+
+    # if writable area is mounted then save the hpsum log information
+    if [ -w "${TOOLKIT_DATA_FILES_DIR}" ] ; then
+        mkdir -p ${TOOLKIT_DATA_FILES_DIR}/${SERIAL_ID}/hp_sum
+        cp -r /tmp/hp_sum/*  ${TOOLKIT_DATA_FILES_DIR}/${SERIAL_ID}/hp_sum
+        cp -r /var/hp/*      ${TOOLKIT_DATA_FILES_DIR}/${SERIAL_ID}/hp_sum
+    fi
+
+    echo "  -HPSUM has finished"
+    echo "  -Sleeping 60 seconds to allow system to reset....."
+    sleep 60s
+}
+
+#
+# Queries $HWDISC_FILE to find the boot device node
+# exports the variable BOOTDEVNODE and SERVERTYPE
+#
+function sstk_set_bootnode_and_systemtype_envs()
+{
+    ## rerun hwdiscovery to find boot device
+    echo "*** Discovering boot device ***"
+    ./hpdiscovery -f ${HWDISC_FILE}
+    sleep 5s
+
+    export "`./hwquery ${HWDISC_FILE} allboards.xml SERVERTYPE=SystemName`"
+
+    ## use hwquery to fetch the boot dev node from hardware discovery file.
+    export `./hwquery ${HWDISC_FILE} allboards.xml BOOTDEVNODE=DevNode`
+
+    echo "    -Server Type=${SERVERTYPE}"
+    echo "    -Boot Device=${BOOTDEVNODE}"
+
+    if [ -z ${BOOTDEVNODE} ] ;
+        then
+            echo "!!! MISSING boot device dev node. Check that the drivers are loaded !!!"
+            exec /bin/bash
+    fi
+
+    if [ -z ${SERVERTYPE} ] ;
+        then
+            echo "!!! MISSING SystemName in ${HWDISC_FILE}. Check that the drivers are loaded !!!"
+            exec /bin/bash
+    fi
+
+}
+
+#
+# Create the symlink /dev/sssd which points to the device node identified by $BOOTDEVNODE
+#
+function sstk_create_sssd_devnode() {
+    sstk_set_bootnode_and_systemtype_envs
+
+    ln -s ${BOOTDEVNODE} /dev/sssd
+    sleep 5s
+}
+
+#
+# Creates the /dev/sssd1 symlink to point to the first partition of /dev/sssd
+function sstk_create_sssd1_symlink() {
+    ## make symlink for first partition, usually sda1 or c0d0p1
+
+    ## Smart Array partitions end in p1,  sda or hda partitons don't have the "p"
+    ## set BOOTDEVPART variable for inserting partition information correctly when creating 
+    ## syslinux.cfg file later in script
+    if test -e ${BOOTDEVNODE}1 ; then
+	ln -s ${BOOTDEVNODE}1 /dev/sssd1
+	export BOOTDEVPART=1
+    elif 
+	test -e ${BOOTDEVNODE}p1 ; 
+	then
+	    ln -s ${BOOTDEVNODE}p1 /dev/sssd1
+	    export BOOTDEVPART=p1
+    else
+	echo "Partition 1 missing, check that partition creation succeeded"
+	exec /bin/bash
+    fi
+}

@@ -1,0 +1,2 @@
+/data                                   0.0.0.0/0.0.0.0(ro,no_root_squash,no_subtree_check,async,crossmnt,fsid=0)
+/data/hp/ss-scripting-toolkit-linux     0.0.0.0/0.0.0.0(rw,no_root_squash,no_subtree_check,async,crossmnt)
