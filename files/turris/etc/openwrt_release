@@ -1,0 +1,6 @@
+DISTRIB_ID="OpenWrt"
+DISTRIB_RELEASE="Bleeding Edge"
+DISTRIB_REVISION="r38891"
+DISTRIB_CODENAME="barrier_breaker"
+DISTRIB_TARGET="mpc85xx/p2020-nand"
+DISTRIB_DESCRIPTION="OpenWrt Barrier Breaker r38891"

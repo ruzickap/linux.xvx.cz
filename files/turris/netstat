@@ -1,0 +1,50 @@
+root@turris:~# netstat -nepa
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      3072/uhttpd
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      2834/lighttpd
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN      3464/unbound
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2918/sshd
+tcp        0    192 192.168.1.1:22          192.168.1.168:55637     ESTABLISHED 3687/0
+tcp        0      0 :::53                   :::*                    LISTEN      3464/unbound
+tcp        0      0 :::22                   :::*                    LISTEN      2918/sshd
+udp        0      0 0.0.0.0:53              0.0.0.0:*                           3464/unbound
+udp        0      0 0.0.0.0:67              0.0.0.0:*                           3429/dnsmasq
+udp        0      0 89.102.175.10:123       85.255.214.66:123       ESTABLISHED 3176/ntpclient
+udp        0      0 :::546                  :::*                                3122/odhcp6c
+udp        0      0 :::547                  :::*                                2924/6relayd
+udp        0      0 :::53                   :::*                                3464/unbound
+raw        0      0 ::%268864020:58         ::%2:*                  58          3122/odhcp6c
+raw        0      0 ::%268864020:58         ::%3:*                  58          2924/6relayd
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
+unix  2      [ ACC ]     STREAM     LISTENING        541 2835/python         /tmp/fastcgi.python.socket-0
+unix  2      [ ACC ]     STREAM     LISTENING       2674 3025/syslog-ng      /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING       2677 3025/syslog-ng      /var/syslog-ng.ctl
+unix  2      [ ]         DGRAM                      3041 3635/hostapd        /var/run/hostapd-phy0/wlan0
+unix  2      [ ACC ]     STREAM     LISTENING       2040 1791/ubusd          /var/run/ubus.sock
+unix  3      [ ]         STREAM     CONNECTED       3405 1791/ubusd          /var/run/ubus.sock
+unix  3      [ ]         STREAM     CONNECTED       4124 3635/hostapd
+unix  3      [ ]         STREAM     CONNECTED       4125 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED        733 1/procd
+unix  3      [ ]         STREAM     CONNECTED       3033 3635/hostapd
+unix  3      [ ]         STREAM     CONNECTED       2700 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED       2891 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED       3358 3557/cron
+unix  3      [ ]         STREAM     CONNECTED        800 2786/netifd
+unix  3      [ ]         STREAM     CONNECTED        801 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED       3371 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED        756 1791/ubusd          /var/run/ubus.sock
+unix  3      [ ]         STREAM     CONNECTED       2703 3072/uhttpd
+unix  3      [ ]         STREAM     CONNECTED       2896 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED       3268 3464/unbound
+unix  3      [ ]         STREAM     CONNECTED       3265 3464/unbound
+unix  3      [ ]         STREAM     CONNECTED       3269 3464/unbound
+unix  3      [ ]         STREAM     CONNECTED       2890 3429/dnsmasq
+unix  3      [ ]         STREAM     CONNECTED       2367 2786/netifd
+unix  3      [ ]         STREAM     CONNECTED        518 1791/ubusd          /var/run/ubus.sock
+unix  3      [ ]         STREAM     CONNECTED        368 1/procd
+unix  2      [ ]         DGRAM                      2368 2786/netifd
+unix  3      [ ]         STREAM     CONNECTED        831 3025/syslog-ng      /dev/log
+unix  3      [ ]         STREAM     CONNECTED       2724 3122/odhcp6c
+unix  3      [ ]         STREAM     CONNECTED       2084 1791/ubusd          /var/run/ubus.sock

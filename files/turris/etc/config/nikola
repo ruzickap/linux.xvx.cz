@@ -1,0 +1,16 @@
+package 'nikola'
+
+config nikola 'main'
+    option debug false
+    #option wan_ifname eth0
+
+config nikola 'server'
+    option address 'https://api.turris.cz/fw'
+    option max_count 1000
+
+config nikola 'logfile'
+    option path '/var/log/iptables'
+    option date_format '%Y-%m-%dT%H:%M:%S'
+
+config nikola 'logrotate'
+    option path '/etc/logrotate.d/iptables'

@@ -1,0 +1,2 @@
+root@turris:~# cat /proc/cmdline
+root=/dev/mtdblock8 rw rootfstype=jffs2 console=ttyS0,115200

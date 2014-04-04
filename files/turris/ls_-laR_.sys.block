@@ -1,0 +1,13 @@
+root@turris:~# ls -laR /sys/block/
+/sys/block/:
+drwxr-xr-x    2 root     root             0 Apr  4 14:50 .
+dr-xr-xr-x   11 root     root             0 Apr  4 14:46 ..
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock0 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd0/mtdblock0
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock1 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd1/mtdblock1
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock2 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd2/mtdblock2
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock3 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd3/mtdblock3
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock4 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd4/mtdblock4
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock5 -> ../devices/ffe05000.localbus/ef000000.nor/mtd/mtd5/mtdblock5
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock6 -> ../devices/virtual/mtd/mtd6/mtdblock6
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock7 -> ../devices/virtual/mtd/mtd7/mtdblock7
+lrwxrwxrwx    1 root     root             0 Apr  4 14:50 mtdblock8 -> ../devices/virtual/mtd/mtd8/mtdblock8

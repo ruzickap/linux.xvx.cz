@@ -1,0 +1,18 @@
+root@turris:~# cat /proc/cpuinfo
+processor       : 0
+cpu             : e500v2
+clock           : 1200.000000MHz
+revision        : 5.1 (pvr 8021 1051)
+bogomips        : 150.00
+
+processor       : 1
+cpu             : e500v2
+clock           : 1200.000000MHz
+revision        : 5.1 (pvr 8021 1051)
+bogomips        : 150.00
+
+total bogomips  : 300.00
+timebase        : 75000000
+platform        : P2020 RDB
+model           : Turris
+Memory          : 2048 MB

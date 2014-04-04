@@ -1,0 +1,9 @@
+root@turris:~# mount
+rootfs on / type rootfs (rw)
+/dev/root on / type jffs2 (rw,noatime)
+proc on /proc type proc (rw,noatime)
+sysfs on /sys type sysfs (rw,noatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,noatime)
+tmpfs on /dev type tmpfs (rw,relatime,size=512k,mode=755)
+devpts on /dev/pts type devpts (rw,relatime,mode=600)
+debugfs on /sys/kernel/debug type debugfs (rw,noatime)

@@ -1,0 +1,2 @@
+MAILTO=""
+*/15 * * * * root /usr/share/nikola/bin/nikola.sh

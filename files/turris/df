@@ -1,0 +1,6 @@
+root@turris:~# df -h
+Filesystem                Size      Used Available Use% Mounted on
+rootfs                  249.0M     31.6M    217.4M  13% /
+/dev/root               249.0M     31.6M    217.4M  13% /
+tmpfs                  1013.9M    312.0K   1013.6M   0% /tmp
+tmpfs                   512.0K      4.0K    508.0K   1% /dev

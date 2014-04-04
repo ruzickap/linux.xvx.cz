@@ -1,0 +1,12 @@
+root@turris:~# cat /proc/partitions
+major minor  #blocks  name
+
+  31        0        128 mtdblock0
+  31        1       1664 mtdblock1
+  31        2       1536 mtdblock2
+  31        3      11136 mtdblock3
+  31        4        768 mtdblock4
+  31        5       1024 mtdblock5
+  31        6       2048 mtdblock6
+  31        7       5120 mtdblock7
+  31        8     254976 mtdblock8

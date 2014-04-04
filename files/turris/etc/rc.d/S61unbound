@@ -1,0 +1,154 @@
+#!/bin/sh /etc/rc.common
+#Copyright (C) 2013 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+START=61
+
+CONFIGFILE="/var/etc/unbound/unbound.conf"
+
+header() {
+    cat > "$CONFIGFILE" <<-EOF
+# auto-generated config file from /etc/config/unbound
+EOF
+}
+
+
+add_section() {
+    section="$1"
+    echo "$section:" >> "$CONFIGFILE"
+}
+
+add_inculde() {
+    include_path="$1"
+    echo "include: \"$include_path\"" >> "$CONFIGFILE"
+}
+
+set_parameter() {
+    local var="$1"
+    local opt="$2"
+    local def="$3"
+    local val
+
+    config_get val "$section" "$var"
+    val=${val:-$def}
+    echo -e "\t$opt: $val" >> "$CONFIGFILE"
+}
+
+set_quoted_parameter() {
+    local var="$1"
+    local opt="$2"
+    local def="$3"
+    local val
+
+    config_get val "$section" "$var"
+    val=${val:-$def}
+    echo -e "\t$opt: \"$val\"" >> "$CONFIGFILE"
+}
+
+add_parameter() {
+    val="$1"
+    opt="$2"
+    echo -e "\t$opt: $val" >> "$CONFIGFILE"
+}
+
+set_multiple_parameters() {
+    local var="$1"
+    local opt="$2"
+    
+    config_list_foreach "$section" "$var" add_parameter "$opt"
+}
+
+#initialize everything 
+init_unbound() {
+
+    #Clear the config and set header
+    header
+
+    config_load unbound
+
+    #Server Section
+    add_section server
+    set_parameter verbosity verbosity 1
+    set_multiple_parameters interface interface
+    set_parameter port port 53
+    set_parameter outgoing_range outgoing-range 60
+    set_parameter outgoing_num_tcp outgoing-num-tcp 1
+    set_parameter incoming_num_tcp incoming-num-tcp 1
+    set_parameter msg_buffer_size msg-buffer-size 8192
+    set_parameter msg_cache_size msg-cache-size 100k
+    set_parameter msg_cache_slabs msg-cache-slabs 1
+    set_parameter num_queries_per_thread num-queries-per-thread 30
+    set_parameter rrset_cache_slabs rrset-cache-slabs 1
+    set_parameter infra_cache_slabs infra-cache-slabs 1
+    set_parameter infra_cache_numhosts infra-cache-numhosts 200
+    set_multiple_parameters access_control access-control
+    set_quoted_parameter username username ""
+    set_quoted_parameter pidfile pidfile "/var/run/unbound.pid"
+    set_quoted_parameter root_hints root-hints "/etc/unbound/named.cache"
+    set_quoted_parameter target_fetch_policy target-fetch-policy "2 1 0 0 0 0"
+    set_parameter harden_short_bufsize harden-short-bufsize yes
+    set_parameter harden_large_queries harden-large-queries yes
+    set_quoted_parameter auto_trust_anchor_file auto-trust-anchor-file "/etc/unbound/root.key"
+    set_parameter key_cache_size key-cache-size 100k
+    set_parameter key_cache_slabs key-cache-slabs 1
+    set_parameter neg_cache_size neg-cache-size 10k
+
+    #Python section
+    add_section python
+    set_multiple_parameters python_script python-script
+
+    #Remote Control
+    add_section remote-control
+
+    #Includes
+    config_list_foreach includes include_path add_inculde
+
+    local do_forward
+    config_get_bool do_forward server forward_upstream 1
+
+    if [ "$do_forward" = "1" ] ; then
+        local SERVERS
+        SERVERS=$(sed -ne 's/^nameserver \(.*\)/\1/p' /tmp/resolv.conf.auto | sort)
+        if [ "$SERVERS" ] ; then
+            (
+            echo 'forward-zone:'
+            echo '	name: "."'
+            for SERVER in $SERVERS ; do
+                echo "	forward-addr: $SERVER"
+            done
+            ) >> "$CONFIGFILE"
+        fi
+        md5sum /tmp/resolv.conf.auto | cut -f1 -d\ >/tmp/resolv.conf.auto.last.md5
+    fi
+}
+
+start() {
+
+    mkdir -p $(dirname "$CONFIGFILE")
+
+    init_unbound
+    unbound
+}
+
+reload() {
+
+    mkdir -p $(dirname "$CONFIGFILE")
+
+    init_unbound
+
+    local pidfile
+    config_get pidfile server pidfile
+
+    if [ -f "$pidfile" ] ; then
+        kill -HUP $(cat $pidfile)
+    fi
+}
+
+stop() {
+    config_load unbound
+
+    local pidfile
+    config_get pidfile server pidfile
+
+    if [ -f "$pidfile" ] ; then
+        kill $(cat $pidfile) && rm "$pidfile"
+    fi
+}

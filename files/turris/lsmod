@@ -1,0 +1,184 @@
+root@turris:~# lsmod
+act_ipt                 3124  0 
+act_mirred              2920  0 
+act_police              4032  0 
+act_skbedit             2028  0 
+arc4                    1452  2 
+async_memcpy             642  1 raid456
+async_pq                1734  1 raid456
+async_raid6_recov       1045  1 raid456
+async_tx                1113  5 raid456
+async_xor               1121  2 raid456
+ath                    16109  3 ath9k
+ath9k                 103449  0 
+ath9k_common            1627  1 ath9k
+ath9k_hw              389243  2 ath9k
+autofs4                20393  0 
+btrfs                 736619  0 
+button_hotplug          3144  0 
+cfg80211              187231  3 ath9k
+cifs                  184805  0 
+cls_basic               3452  0 
+cls_flow                5428  0 
+cls_fw                  3532  0 
+cls_route               5288  0 
+cls_tcindex             4364  0 
+cls_u32                 6056  0 
+compat                   841  5 ath9k
+configfs               19868  0 
+crc16                    983  1 ext4
+crc32c                  1048  1 
+crc_ccitt                995  1 ppp_async
+crc_itu_t               1003  1 udf
+crypto_blkcipher       10799  2 ecb
+crypto_hash            10470  9 cifs
+des_generic            16993  0 
+ecb                     1524  0 
+ehci_hcd               34316  1 ehci_platform
+ehci_platform           2548  0 
+em_cmp                   752  0 
+em_meta                 4836  0 
+em_nbyte                 792  0 
+em_text                 1440  0 
+em_u32                   616  0 
+exportfs                3212  2 nfsd
+ext4                  307529  0 
+fat                    47855  2 msdos
+fsl_mph_dr_of           3506  0 
+fuse                   66365  0 
+gpio_keys               6876  0 
+hfs                    44979  0 
+hfsplus                89978  0 
+hmac                    2448  0 
+input_core             25805  2 gpio_keys
+ip6_tables             10289  3 ip6table_raw
+ip6t_REJECT             2444  2 
+ip6t_ah                  916  0 
+ip6t_eui64               772  0 
+ip6t_frag                948  0 
+ip6t_hbh                1348  0 
+ip6t_ipv6header         1200  0 
+ip6t_mh                  788  0 
+ip6t_rt                 1748  0 
+ip6table_filter          724  1 
+ip6table_mangle         1016  1 
+ip6table_raw             696  1 
+ip_tables              10501  4 iptable_nat
+ipt_MASQUERADE          1248  1 
+ipt_REJECT              1904  2 
+iptable_filter           772  1 
+iptable_mangle           936  1 
+iptable_nat             2084  1 
+iptable_raw              736  1 
+ipv6                  268952 30 ip6t_REJECT
+isofs                  21121  0 
+jbd2                   54528  1 ext4
+leds_gpio               3104  0 
+libcrc32c                667  2 xfs
+linear                  3560  0 
+lockd                  50920  2 nfsd
+lzo_compress            1790  1 btrfs
+lzo_decompress          1711  1 btrfs
+mac80211              338653  1 ath9k
+mbcache                 4985  1 ext4
+md4                     2944  0 
+md5                     1520  0 
+md_mod                101433  6 multipath
+minix                  27098  0 
+mmc_block              21329  0 
+mmc_core               75638  2 mmc_block
+msdos                   5968  0 
+multipath               5608  0 
+nf_conntrack           48490 13 iptable_nat
+nf_conntrack_ftp        5344  1 nf_nat_ftp
+nf_conntrack_ipv4       5900  9 
+nf_conntrack_ipv6       6640  3 
+nf_conntrack_irc        3016  1 nf_nat_irc
+nf_defrag_ipv4           882  1 nf_conntrack_ipv4
+nf_defrag_ipv6         13593  1 nf_conntrack_ipv6
+nf_nat                 10848  7 iptable_nat
+nf_nat_ftp              1408  0 
+nf_nat_ipv4             2590  1 iptable_nat
+nf_nat_irc              1068  0 
+nfs                   110460  0 
+nfsd                   75374  0 
+nls_base                5334 22 vfat
+nls_cp1250              3932  0 
+nls_cp1251              3676  0 
+nls_cp437               4444  0 
+nls_cp775               3932  0 
+nls_cp850               3676  0 
+nls_cp852               3676  0 
+nls_cp866               3932  0 
+nls_iso8859_1           2912  0 
+nls_iso8859_13          3424  0 
+nls_iso8859_15          3424  0 
+nls_iso8859_2           3424  0 
+nls_koi8_r              3932  0 
+nls_utf8                 940  0 
+ntfs                  102663  0 
+ppp_async               7288  0 
+ppp_generic            22398  3 pppoe
+pppoe                   8932  0 
+pppox                   1446  1 pppoe
+raid0                   7700  0 
+raid1                  27827  0 
+raid10                 41908  0 
+raid456                58372  0 
+raid6_pq               82992  3 async_raid6_recov
+reiserfs              210951  0
+sch_codel               4656  0
+sch_dsmark              3960  0
+sch_gred                6500  0
+sch_hfsc               14404  0
+sch_htb                13752  0
+sch_ingress             1112  0
+sch_netem               6968  0
+sch_prio                3468  0
+sch_red                 4840  0
+sch_sfq                 8728  0
+sch_tbf                 4196  0
+sch_teql                4128  0
+scsi_mod               82278  3 ums_cypress
+sd_mod                 26444  0
+sdhci                  25550  1 sdhci_pltfm
+sdhci_of_esdhc          2980  0
+sdhci_pltfm             3310  1 sdhci_of_esdhc
+sha256_generic          8929  0
+slhc                    4019  1 ppp_generic
+sunrpc                151484  3 nfsd
+udf                    78126  0
+ums_alauda              8344  0
+ums_cypress             2320  0
+ums_datafab             4644  0
+ums_freecom             2108  0
+ums_isd200              5500  0
+ums_jumpshot            3636  0
+ums_karma               1684  0
+ums_sddr09              9068  0
+ums_sddr55              5760  0
+ums_usbat               7484  0
+usb_common              1132  1 usbcore
+usb_storage            37792 10 ums_usbat
+usbcore               118153 14 usblp
+usblp                   9564  0
+vfat                    8660  0
+x_tables               11409 33 ipt_MASQUERADE
+xfs                   463551  0
+xor                     6423  2 async_xor
+xt_CT                   2524  0
+xt_LOG                 10096  3
+xt_REDIRECT             1152  0
+xt_TCPMSS               2828  2
+xt_comment               524 53
+xt_conntrack            2416 11
+xt_limit                1288 23
+xt_mac                   668  0
+xt_mark                  724  0
+xt_multiport            1228  0
+xt_nat                  1212  0
+xt_state                 836  0
+xt_tcpudp               1780  9
+xt_time                 1784  0
+zlib_deflate           18472  1 btrfs
+zlib_inflate           13078  1 btrfs

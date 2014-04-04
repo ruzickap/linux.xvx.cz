@@ -1,0 +1,5 @@
+root@turris:~# free
+             total         used         free       shared      buffers
+Mem:       2076428        67700      2008728            0            0
+-/+ buffers:              67700      2008728
+Swap:            0            0            0

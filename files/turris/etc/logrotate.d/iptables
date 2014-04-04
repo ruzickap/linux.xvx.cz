@@ -1,0 +1,5 @@
+/var/log/iptables {
+     size 0k
+     copytruncate
+     rotate 1
+}

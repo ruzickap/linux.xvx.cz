@@ -1,0 +1,16 @@
+ruzickap@peru:~$ ssh 192.168.1.1 -l root
+Warning: Permanently added '192.168.1.1' (ECDSA) to the list of known hosts.
+root@192.168.1.1's password:
+
+
+BusyBox v1.19.4 (2014-02-06 14:34:31 CET) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+  _______  _    _  _____   _____   _____   _____
+ |__   __|| |  | ||  __ \ |  __ \ |_   _| / ____|
+    | |   | |  | || |__) || |__) |  | |  | (___
+    | |   | |  | ||  _  / |  _  /   | |   \___ \
+    | |   | |__| || | \ \ | | \ \  _| |_  ____) |
+    |_|    \____/ |_|  \_\|_|  \_\|_____||_____/
+
+ BARRIER BREAKER (Bleeding Edge, r38891)

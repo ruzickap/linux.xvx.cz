@@ -1,0 +1,10 @@
+
+config config 'settings'
+	option lang 'en'
+
+config config 'auth'
+	option password '$p5k2$3e8$Mxxxxxxxxxxxxxxxxxxxxxxxx9.b.HPKO4e0/BwT2'
+
+config config 'wizard'
+	option allowed_step_max '8'
+

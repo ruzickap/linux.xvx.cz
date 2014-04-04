@@ -1,0 +1,382 @@
+root@turris:~# dmesg                                                                                                                                                                                                             
+[    0.000000] Using P2020 RDB machine description                                                                                                                                                                               
+[    0.000000] Memory CAM mapping: 256/256 Mb, residual: 1536Mb                                                                                                                                                                  
+[    0.000000] Linux version 3.10.18 (beast@ubuntu-openwrt) (gcc version 4.6.4 (OpenWrt/Linaro GCC 4.6-2013.05 r38891) ) #1 SMP Thu Feb 6 14:15:32 CET 2014                                                                      
+[    0.000000] Found legacy serial port 0 for /soc@ffe00000/serial@4500                                                                                                                                                          
+[    0.000000]   mem=ffe04500, taddr=ffe04500, irq=0, clk=600000000, speed=0                                                                                                                                                     
+[    0.000000] Found legacy serial port 1 for /soc@ffe00000/serial@4600                                                                                                                                                          
+[    0.000000]   mem=ffe04600, taddr=ffe04600, irq=0, clk=600000000, speed=0                                                                                                                                                     
+[    0.000000] CPU maps initialized for 1 thread per core                                                                                                                                                                        
+[    0.000000]  (thread shift is 0)                                                                                                                                                                                              
+[    0.000000] bootconsole [udbg0] enabled                                                                                                                                                                                       
+[    0.000000] mpc85xx_rdb_setup_arch: Could not find Quicc Engine node                                                                                                                                                          
+[    0.000000] MPC85xx RDB board from Freescale Semiconductor                                                                                                                                                                    
+[    0.000000] Top of RAM: 0x80000000, Total RAM: 0x80000000                                                                                                                                                                     
+[    0.000000] Memory hole size: 0MB
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x00000000-0x1fffffff]
+[    0.000000]   Normal   empty
+[    0.000000]   HighMem  [mem 0x20000000-0x7fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x7fffffff]
+[    0.000000] On node 0 totalpages: 524288
+[    0.000000] free_area_init_node: node 0, pgdat c038c4a0, node_mem_map c03ce000
+[    0.000000]   DMA zone: 1024 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 131072 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 3072 pages used for memmap
+[    0.000000]   HighMem zone: 393216 pages, LIFO batch:31
+[    0.000000] MMU: Allocated 1088 bytes of context maps for 255 contexts
+[    0.000000] PERCPU: Embedded 7 pages/cpu @c13d8000 s6816 r8192 d13664 u32768
+[    0.000000] pcpu-alloc: s6816 r8192 d13664 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 523264
+[    0.000000] Kernel command line: root=/dev/mtdblock8 rw rootfstype=jffs2 console=ttyS0,115200
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Sorting __ex_table...
+[    0.000000] High memory: 1572856k
+[    0.000000] Memory: 2010296k/2097152k available (3520k kernel code, 86856k reserved, 156k data, 209k bss, 180k init)
+[    0.000000] Kernel virtual memory layout:
+[    0.000000]   * 0xfffbf000..0xfffff000  : fixmap
+[    0.000000]   * 0xffc00000..0xffe00000  : highmem PTEs
+[    0.000000]   * 0xffbfd000..0xffc00000  : early ioremap
+[    0.000000]   * 0xe1000000..0xffbfd000  : vmalloc & ioremap
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] NR_IRQS:512 nr_irqs:512 16
+[    0.000000] mpic: Resetting
+[    0.000000] mpic: Setting up MPIC " OpenPIC  " version 1.2 at ffe40000, max 2 CPUs
+[    0.000000] mpic: ISU size: 256, shift: 8, mask: ff
+[    0.000000] mpic: Initializing for 256 sources
+[    0.000000] mpc85xx_rdb_pic_init: Could not find qe-ic node
+[    0.000000] time_init: decrementer frequency = 75.000000 MHz
+[    0.000000] time_init: processor frequency   = 1200.000000 MHz
+[    0.000000] clocksource: timebase mult[d555555] shift[24] registered
+[    0.000000] clockevent: decrementer mult[13333333] shift[32] cpu[0]
+[    0.006301] pid_max: default: 32768 minimum: 301
+[    0.010965] Mount-cache hash table entries: 512
+[    0.016956] mpic: requesting IPIs...
+[    0.021061] Brought up 2 CPUs
+[    0.024531] NET: Registered protocol family 16
+[    0.036092] Found FSL PCI host bridge at 0x00000000ffe09000. Firmware bus number: 0->1
+[    0.043935] PCI host bridge /pcie@ffe09000 (primary) ranges:
+[    0.049580]  MEM 0x00000000a0000000..0x00000000bfffffff -> 0x00000000a0000000 
+[    0.056795]   IO 0x00000000ffc10000..0x00000000ffc1ffff -> 0x0000000000000000
+[    0.063931] /pcie@ffe09000: PCICSRBAR @ 0xfff00000
+[    0.068969] Found FSL PCI host bridge at 0x00000000ffe0a000. Firmware bus number: 0->0
+[    0.076810] PCI host bridge /pcie@ffe0a000  ranges:
+[    0.081674]  MEM 0x0000000080000000..0x000000009fffffff -> 0x0000000080000000 
+[    0.088887]   IO 0x00000000ffc00000..0x00000000ffc0ffff -> 0x0000000000000000
+[    0.096022] /pcie@ffe0a000: PCICSRBAR @ 0xfff00000
+[    0.110145] PCI: Probing PCI hardware
+[    0.113911] fsl-pci ffe09000.pcie: PCI host bridge to bus 0000:00
+[    0.119938] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.126096] pci_bus 0000:00: root bus resource [mem 0xa0000000-0xbfffffff]
+[    0.132963] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.138441] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to ff
+[    0.138465] pci 0000:00:00.0: [1957:0070] type 01 class 0x0b2000
+[    0.138475] pci 0000:00:00.0: ignoring class 0x0b2000 (doesn't match header type 01)
+[    0.146201] pci 0000:00:00.0: supports D1 D2
+[    0.146208] pci 0000:00:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.146494] pci 0000:01:00.0: [168c:0030] type 00 class 0x028000
+[    0.146517] pci 0000:01:00.0: reg 10: [mem 0xa0000000-0xa001ffff 64bit]
+[    0.146553] pci 0000:01:00.0: reg 30: [mem 0x00000000-0x0000ffff pref]
+[    0.146602] pci 0000:01:00.0: supports D1
+[    0.146609] pci 0000:01:00.0: PME# supported from D0 D1 D3hot
+[    0.154201] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    0.159349] pci 0000:00:00.0:   bridge window [io  0x0000-0x0fff]
+[    0.159357] pci 0000:00:00.0:   bridge window [mem 0xa0000000-0xa00fffff]
+[    0.159400] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+[    0.159409] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 01
+[    0.159516] fsl-pci ffe0a000.pcie: PCI host bridge to bus 0001:02
+[    0.165534] pci_bus 0001:02: root bus resource [io  0x20000-0x2ffff] (bus address [0x0000-0xffff])
+[    0.174481] pci_bus 0001:02: root bus resource [mem 0x80000000-0x9fffffff]
+[    0.181349] pci_bus 0001:02: root bus resource [bus 02-ff]
+[    0.186827] pci_bus 0001:02: busn_res: [bus 02-ff] end is updated to ff
+[    0.186844] pci 0001:02:00.0: [1957:0070] type 01 class 0x0b2000
+[    0.186853] pci 0001:02:00.0: ignoring class 0x0b2000 (doesn't match header type 01)
+[    0.194579] pci 0001:02:00.0: supports D1 D2
+[    0.194586] pci 0001:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.194722] pci 0001:02:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+[    0.202761] pci 0001:02:00.0: PCI bridge to [bus 03-ff]
+[    0.207908] pci 0001:02:00.0:   bridge window [io  0x20000-0x20fff]
+[    0.207916] pci 0001:02:00.0:   bridge window [mem 0x00000000-0x000fffff]
+[    0.207924] pci 0001:02:00.0:   bridge window [mem 0x00000000-0x000fffff 64bit pref]
+[    0.207935] pci_bus 0001:03: busn_res: [bus 03-ff] end is updated to 03
+[    0.207944] pci_bus 0001:02: busn_res: [bus 02-ff] end is updated to 03
+[    0.207973] PCI 0000:00 Cannot reserve Legacy IO [io  0x0000-0x0fff]
+[    0.207979] PCI 0001:02 Cannot reserve Legacy IO [io  0x20000-0x20fff]
+[    0.208001] pci 0000:00:00.0: BAR 9: can't assign mem pref (size 0x100000)
+[    0.214800] pci 0000:01:00.0: BAR 6: assigned [mem 0xa0020000-0xa002ffff pref]
+[    0.222010] pci 0000:00:00.0: PCI bridge to [bus 01]
+[    0.226964] pci 0000:00:00.0:   bridge window [io  0x0000-0xffff]
+[    0.233050] pci 0000:00:00.0:   bridge window [mem 0xa0000000-0xbfffffff]
+[    0.239831] pci 0001:02:00.0: PCI bridge to [bus 03]
+[    0.244785] pci 0001:02:00.0:   bridge window [io  0x20000-0x2ffff]
+[    0.251045] pci 0001:02:00.0:   bridge window [mem 0x80000000-0x9fffffff]
+[    0.257823] Some PCI device resources are unassigned, try booting with pci=realloc
+[    0.265391] pci 0000:00:00.0: enabling device (0106 -> 0107)
+[    0.271041] pci 0001:02:00.0: enabling device (0106 -> 0107)
+[    0.276692] pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+[    0.276699] pci_bus 0000:00: resource 5 [mem 0xa0000000-0xbfffffff]
+[    0.276706] pci_bus 0000:01: resource 0 [io  0x0000-0xffff]
+[    0.276713] pci_bus 0000:01: resource 1 [mem 0xa0000000-0xbfffffff]
+[    0.276719] pci_bus 0001:02: resource 4 [io  0x20000-0x2ffff]
+[    0.276726] pci_bus 0001:02: resource 5 [mem 0x80000000-0x9fffffff]
+[    0.276733] pci_bus 0001:03: resource 0 [io  0x20000-0x2ffff]
+[    0.276740] pci_bus 0001:03: resource 1 [mem 0x80000000-0x9fffffff]
+[    0.276821] Setting up Freescale MSI support
+[    0.276973] Registering qe_ic with sysfs...
+[    0.279657] bio: create slab <bio-0> at 0
+[    0.284736] Switching to clocksource timebase
+[    0.290326] NET: Registered protocol family 2
+[    0.295031] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.302046] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.308469] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.314827] TCP: reno registered
+[    0.317997] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.323833] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.330196] NET: Registered protocol family 1
+[    0.334504] PCI: CLS 32 bytes, default 32
+[    0.335690] bounce pool size: 64 pages
+[    0.345701] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.351523] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.361645] msgmni has been set to 983
+[    0.365396] io scheduler noop registered
+[    0.369243] io scheduler deadline registered (default)
+[    0.418632] Serial: 8250/16550 driver, 16 ports, IRQ sharing enabled
+[    0.427163] serial8250.0: ttyS0 at MMIO 0xffe04500 (irq = 42) is a 16550A
+[    0.433958] console [ttyS0] enabled, bootconsole disabled
+[    0.445151] serial8250.0: ttyS1 at MMIO 0xffe04600 (irq = 42) is a 16550A
+[    0.452474] ffe04500.serial: ttyS0 at MMIO 0xffe04500 (irq = 42) is a 16550
+[    0.459812] ffe04600.serial: ttyS1 at MMIO 0xffe04600 (irq = 42) is a 16550
+[    0.467997] ef000000.nor: Found 1 x16 devices at 0x0 in 16-bit bank. Manufacturer ID 0x000001 Chip ID 0x002101
+[    0.478024] Amd/Fujitsu Extended Query Table at 0x0040
+[    0.483194]   Amd/Fujitsu Extended Query version 1.3.
+[    0.488251] number of CFI chips: 1
+[    0.491870] 6 ofpart partitions found on MTD device ef000000.nor
+[    0.497888] Creating 6 MTD partitions on "ef000000.nor":
+[    0.503206] 0x000000000000-0x000000020000 : "NOR (RO) DTB Image"
+[    0.509719] 0x000000020000-0x0000001c0000 : "NOR (RO) Linux Kernel Image"
+[    0.516982] 0x0000001c0000-0x000000340000 : "NOR (RO) JFFS2 Root File System"
+[    0.524608] 0x000000340000-0x000000e20000 : "NOR (RO) NAND FW backup"
+[    0.531533] 0x000000e40000-0x000000f00000 : "NOR (RW) Cert backup"
+[    0.538196] 0x000000f00000-0x000001000000 : "NOR (RO) U-Boot Image"
+[    0.549932] ONFI param page 0 valid
+[    0.553473] ONFI flash detected
+[    0.556613] NAND device: Manufacturer ID: 0x2c, Chip ID: 0xda (Micron MT29F2G08ABAEAWP), 256MiB, page size: 2048, OOB size: 64
+[    0.568436] Bad block table found at page 131008, version 0x01
+[    0.574982] Bad block table found at page 130944, version 0x01
+[    0.581457] 3 ofpart partitions found on MTD device ff800000.flash
+[    0.587648] Creating 3 MTD partitions on "ff800000.flash":
+[    0.593141] 0x000000000000-0x000000200000 : "NAND (RW) DTB Image"
+[    0.599781] 0x000000200000-0x000000700000 : "NAND (RW) Linux Kernel Image"
+[    0.607161] 0x000000700000-0x000010000000 : "NAND (RW) JFFS2 Root File System"
+[    0.614993] eLBC NAND device at 0xff800000, bank 1
+[    0.620215] fsl_espi ffe07000.spi: master is unqueued, this is deprecated
+[    0.627019] fsl_espi ffe07000.spi: at 0xe103c000 (irq = 59)
+[    0.633060] ar8216: Module init.
+[    0.636745] libphy: Fixed MDIO Bus: probed
+[    0.641064] libphy: Freescale PowerQUICC MII Bus: probed
+[    0.646733] ar8216: probe addr 0.
+[    0.650158] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd033
+[    0.655235] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd034
+[    0.660287] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd036
+[    0.665442] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd033
+[    0.670494] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd034
+[    0.675545] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd036
+[    0.680700] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd033
+[    0.685752] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd034
+[    0.690803] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd036
+[    0.695958] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd033
+[    0.701009] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd034
+[    0.706061] phy_id: 4dd036, ar8xxx_phy_ids[i]: 4dd036
+[    0.711112] ar8216: gonna list.
+[    0.714251] ar8216: after list.
+[    0.717390] ar8216: Identifying chip.
+[    0.743310] switch0: Atheros AR8327 rev. 2 switch registered on mdio@ffe24520
+[    0.750451] ar8216: FOUND!!!.
+[    1.966145] fsl-gianfar ffe24000.ethernet eth0: mac: 00:00:00:00:00:00
+[    1.972685] fsl-gianfar ffe24000.ethernet eth0: Running with NAPI enabled
+[    1.979479] fsl-gianfar ffe24000.ethernet eth0: RX BD ring size for Q[0]: 256
+[    1.986620] fsl-gianfar ffe24000.ethernet eth0: TX BD ring size for Q[0]: 256
+[    1.994201] fsl-gianfar ffe25000.ethernet eth1: mac: 00:00:00:00:00:00
+[    2.000742] fsl-gianfar ffe25000.ethernet eth1: Running with NAPI enabled
+[    2.007541] fsl-gianfar ffe25000.ethernet eth1: RX BD ring size for Q[0]: 256
+[    2.014683] fsl-gianfar ffe25000.ethernet eth1: TX BD ring size for Q[0]: 256
+[    2.022262] fsl-gianfar ffe26000.ethernet eth2: mac: 00:00:00:00:00:00
+[    2.028802] fsl-gianfar ffe26000.ethernet eth2: Running with NAPI enabled
+[    2.035631] fsl-gianfar ffe26000.ethernet eth2: RX BD ring size for Q[0]: 256
+[    2.042774] fsl-gianfar ffe26000.ethernet eth2: TX BD ring size for Q[0]: 256
+[    2.050029] ucc_geth_driver: QE UCC Gigabit Ethernet Controller
+[    2.056329] i2c /dev entries driver
+[    2.059992] mpc-i2c ffe03000.i2c: timeout 1000000 us
+[    2.067585] rtc-mcp7940 0-006f: rtc core: registered mcp7940 as rtc0
+[    2.074017] mpc-i2c ffe03100.i2c: timeout 1000000 us
+[    2.079314] booke_wdt: powerpc book-e watchdog driver loaded
+[    2.085363] TCP: cubic registered
+[    2.088676] NET: Registered protocol family 17
+[    2.093190] Bridge firewalling registered
+[    2.097208] 8021q: 802.1Q VLAN Support v1.8
+[    2.102847] rtc-mcp7940 0-006f: setting system clock to 2014-04-04 12:46:53 UTC (1396615613)
+[    3.892186] jffs2: notice: (1) jffs2_build_xattr_subsystem: complete building xattr subsystem, 0 of xdatum (0 unchecked, 0 orphan) and 0 of xref (0 dead, 0 orphan) found.
+[    3.912148] VFS: Mounted root (jffs2 filesystem) on device 31:8.
+[    3.918355] Freeing unused kernel memory: 180K (c0343000 - c0370000)
+[    7.137864] usbcore: registered new interface driver usbfs
+[    7.143456] usbcore: registered new interface driver hub
+[    7.148904] usbcore: registered new device driver usb
+[    7.155866] Button Hotplug driver version 0.4.1
+[    7.229299] raid6: int32x1    159 MB/s
+[    7.301046] raid6: int32x2    250 MB/s
+[    7.369164] raid6: int32x4    383 MB/s
+[    7.437096] raid6: int32x8    373 MB/s
+[    7.440840] raid6: using algorithm int32x4 (383 MB/s)
+[    7.445897] raid6: using intx1 recovery algorithm
+[    7.450951] xor: measuring software checksum speed
+[    7.493033]    8regs     :  1416.000 MB/sec
+[    7.537031]    8regs_prefetch:  1225.000 MB/sec
+[    7.581032]    32regs    :  1524.000 MB/sec
+[    7.625030]    32regs_prefetch:  1348.000 MB/sec
+[    7.629648] xor: using function: 32regs (1524.000 MB/sec)
+[    7.784371] bio: create slab <bio-1> at 1
+[    7.789492] Btrfs loaded
+[    7.926638] SGI XFS with security attributes, large block/inode numbers, no debug enabled
+[    7.947202] SCSI subsystem initialized
+[    7.959887] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    7.966551] fsl-ehci fsl-ehci.0: Freescale On-Chip EHCI Host Controller
+[    7.973206] fsl-ehci fsl-ehci.0: new USB bus registered, assigned bus number 1
+[    7.980515] fsl-ehci fsl-ehci.0: irq 28, io mem 0xffe22000
+[    7.997189] fsl-ehci fsl-ehci.0: USB 2.0 started, EHCI 1.00
+[    8.003606] hub 1-0:1.0: USB hub found
+[    8.007396] hub 1-0:1.0: 1 port detected
+[    8.015267] ehci-platform: EHCI generic platform driver
+[    8.030345] sdhci: Secure Digital Host Controller Interface driver
+[    8.036572] sdhci: Copyright(c) Pierre Ossman
+[    8.043144] sdhci-pltfm: SDHCI platform and OF driver helper
+[    8.081141] mmc0: SDHCI controller on ffe2e000.sdhc [ffe2e000.sdhc] using DMA
+[    8.096125] usbcore: registered new interface driver usb-storage
+[    8.321083] usb 1-1: new high-speed USB device number 2 using fsl-ehci
+[    8.458007] hub 1-1:1.0: USB hub found
+[    8.461969] hub 1-1:1.0: 2 ports detected
+[    9.492579] NET: Registered protocol family 10
+[    9.521408] md: linear personality registered for level -1
+[    9.537664] md: raid0 personality registered for level 0
+[    9.544865] md: raid1 personality registered for level 1
+[    9.552629] md: raid10 personality registered for level 10
+[    9.564338] md: raid6 personality registered for level 6
+[    9.569674] md: raid5 personality registered for level 5
+[    9.574994] md: raid4 personality registered for level 4
+[    9.587278] md: multipath personality registered for level -4
+[    9.659171] RPC: Registered named UNIX socket transport module.
+[    9.665123] RPC: Registered udp transport module.
+[    9.669855] RPC: Registered tcp transport module.
+[    9.674569] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    9.762883] NTFS driver 2.1.30 [Flags: R/O MODULE].
+[    9.787115] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    9.798968] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    9.808360] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    9.823641] u32 classifier
+[    9.826399]     input device check on
+[    9.830062]     Actions configured
+[    9.834333] Mirror/redirect action on
+[    9.845582] Failed to load ipt action
+[    9.854162] netem: version 1.3
+[    9.863840] fuse init (API version 7.22)
+[    9.876698] Loading modules backported from Linux version master-2013-11-05-0-gafa3093
+[    9.884660] Backport generated by backports.git backports-20130802-0-gdb67a3f
+[    9.894560] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    9.943625] usbcore: registered new interface driver ums-alauda
+[    9.950568] usbcore: registered new interface driver ums-cypress
+[    9.958184] usbcore: registered new interface driver ums-datafab
+[    9.965371] usbcore: registered new interface driver ums-freecom
+[    9.972623] usbcore: registered new interface driver ums-isd200
+[    9.979716] usbcore: registered new interface driver ums-jumpshot
+[    9.987058] usbcore: registered new interface driver ums-karma
+[    9.994272] usbcore: registered new interface driver ums-sddr09
+[   10.001524] usbcore: registered new interface driver ums-sddr55
+[   10.008653] usbcore: registered new interface driver ums-usbat
+[   10.016207] usbcore: registered new interface driver usblp
+[   10.026959] xt_time: kernel timezone is -0000
+[   10.042477] cfg80211: Calling CRDA to update world regulatory domain
+[   10.049712] cfg80211: World regulatory domain updated:
+[   10.054892] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   10.063087] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   10.070840] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (300 mBi, 2000 mBm)
+[   10.078596] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm)
+[   10.086357] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (300 mBi, 2000 mBm)
+[   10.094112] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (300 mBi, 2000 mBm)
+[   10.101863] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm)
+[   10.167022] PPP generic driver version 2.4.2
+[   10.172155] NET: Registered protocol family 24
+[   10.337401] ath: EEPROM regdomain: 0x0
+[   10.337410] ath: EEPROM indicates default country code should be used
+[   10.337414] ath: doing EEPROM country->regdmn map search
+[   10.337422] ath: country maps to regdmn code: 0x3a
+[   10.337427] ath: Country alpha2 being used: US
+[   10.337431] ath: Regpair used: 0x3a
+[   10.343719] ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+[   10.345769] cfg80211: Calling CRDA for country: US
+[   10.351054] ieee80211 phy0: Atheros AR9300 Rev:3 mem=0xf4c80000, irq=24
+[   10.351057] cfg80211: Regulatory domain changed to country: US
+[   10.351065] cfg80211:  DFS Master region FCC
+[   10.351065] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   10.351069] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2700 mBm)
+[   10.351071] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (300 mBi, 1700 mBm)
+[   10.351074] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (300 mBi, 2400 mBm)
+[   10.351077] cfg80211:   (5490000 KHz - 5600000 KHz @ 80000 KHz), (300 mBi, 2400 mBm)
+[   10.351080] cfg80211:   (5650000 KHz - 5710000 KHz @ 40000 KHz), (300 mBi, 2400 mBm)
+[   10.351087] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (300 mBi, 3000 mBm)
+[   10.351089] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 4000 mBm)
+[   19.935303] ar8216: Module config init.
+[   19.939509] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   19.947224] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   19.954935] IPv6: ADDRCONF(NETDEV_UP): eth2: link is not ready
+[   20.632387] ar8216: Module config init.
+[   20.636469] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   20.642673] device eth0 entered promiscuous mode
+[   20.651522] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+[   20.662075] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+[   20.670855] device eth1 entered promiscuous mode
+[   20.700033] IPv6: ADDRCONF(NETDEV_UP): eth2: link is not ready
+[   21.633042] ar8216: config aneg.
+[   22.639318] libphy: mdio@ffe24520:00 - Link is Up - 1000/Full
+[   22.645152] br-lan: port 1(eth0) entered forwarding state
+[   22.650588] br-lan: port 1(eth0) entered forwarding state
+[   22.656016] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   22.665654] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+[   22.673323] libphy: fixed-0:06 - Link is Up - 1000/Full
+[   22.679351] br-lan: port 2(eth1) entered forwarding state
+[   22.684773] br-lan: port 2(eth1) entered forwarding state
+[   22.690194] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+[   23.697362] libphy: mdio@ffe24520:07 - Link is Up - 100/Full
+[   23.703987] IPv6: ADDRCONF(NETDEV_CHANGE): eth2: link becomes ready
+[   24.501137] device eth2 entered promiscuous mode
+[   24.653040] br-lan: port 1(eth0) entered forwarding state
+[   24.685033] br-lan: port 2(eth1) entered forwarding state
+[   25.349083] device eth2 left promiscuous mode
+[   25.999160] cfg80211: Calling CRDA for country: CZ
+[   26.005425] cfg80211: Regulatory domain changed to country: CZ
+[   26.011309] cfg80211:  DFS Master region ETSI
+[   26.015503] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp)
+[   26.023875] cfg80211:   (2400000 KHz - 2483000 KHz @ 40000 KHz), (N/A, 2000 mBm)
+[   26.031298] cfg80211:   (5150000 KHz - 5250000 KHz @ 80000 KHz), (N/A, 2300 mBm)
+[   26.038711] cfg80211:   (5250000 KHz - 5350000 KHz @ 80000 KHz), (N/A, 2000 mBm)
+[   26.046120] cfg80211:   (5470000 KHz - 5725000 KHz @ 80000 KHz), (N/A, 2700 mBm)
+[   26.053528] cfg80211:   (57240000 KHz - 65880000 KHz @ 2160000 KHz), (N/A, 4000 mBm)
+[   27.302549] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   27.357472] device wlan0 entered promiscuous mode
+[   27.368846] IPv6: ADDRCONF(NETDEV_UP): wlan0: link is not ready
+[   27.484385] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[   27.491666] br-lan: port 3(wlan0) entered forwarding state
+[   27.497223] br-lan: port 3(wlan0) entered forwarding state
+[   29.501030] br-lan: port 3(wlan0) entered forwarding state
+[   34.847666] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=205.188.11.67 DST=89.102.175.10 LEN=88 TOS=0x00 PREC=0x00 TTL=101 ID=25270 DF PROTO=TCP SPT=443 DPT=47562 WINDOW=16384 RES=0x00 ACK PSH URGP=0
+[   34.995773] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=205.188.10.221 DST=89.102.175.10 LEN=40 TOS=0x00 PREC=0x00 TTL=101 ID=60661 DF PROTO=TCP SPT=443 DPT=55797 WINDOW=16384 RES=0x00 ACK RST URGP=0
+[   34.995820] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=205.188.17.131 DST=89.102.175.10 LEN=40 TOS=0x00 PREC=0x00 TTL=101 ID=6757 DF PROTO=TCP SPT=443 DPT=58324 WINDOW=16384 RES=0x00 ACK RST URGP=0
+[   37.886030] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=217.31.192.101 DST=89.102.175.10 LEN=142 TOS=0x00 PREC=0x00 TTL=56 ID=47888 DF PROTO=TCP SPT=5678 DPT=60490 WINDOW=330 RES=0x00 ACK PSH URGP=0
+[   48.350597] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=74.125.136.125 DST=89.102.175.10 LEN=432 TOS=0x00 PREC=0x00 TTL=45 ID=49274 PROTO=TCP SPT=443 DPT=43211 WINDOW=967 RES=0x00 ACK PSH URGP=0
+[   57.470781] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=62.168.56.1 DST=89.102.175.10 LEN=104 TOS=0x00 PREC=0x00 TTL=55 ID=65319 DF PROTO=UDP SPT=4500 DPT=54277 LEN=84
+[   57.470867] turris-000000: IN=eth2 OUT= MAC=d8:58:d7:00:02:de:00:01:5c:55:42:cc:08:00 SRC=62.168.56.1 DST=89.102.175.10 LEN=104 TOS=0x00 PREC=0x00 TTL=55 ID=31599 DF PROTO=UDP SPT=4500 DPT=54277 LEN=84

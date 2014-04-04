@@ -1,0 +1,3 @@
+root@turris:/# opkg update
+Downloading https://api.turris.cz/openwrt-repo/turris/packages//Packages.gz.
+Updated list of available packages in /var/opkg-lists/cznic.

@@ -1,0 +1,65 @@
+root@turris:~# ps w
+  PID USER       VSZ STAT COMMAND
+    1 root      1392 S    /sbin/procd
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u4:0]
+    7 root         0 SW   [migration/0]
+    8 root         0 SW   [rcu_bh]
+    9 root         0 SW   [rcu_sched]
+   10 root         0 SW   [migration/1]
+   11 root         0 SW   [ksoftirqd/1]
+   13 root         0 SW<  [kworker/1:0H]
+   14 root         0 SW<  [khelper]
+   15 root         0 SW   [kworker/u4:1]
+  116 root         0 SW<  [writeback]
+  118 root         0 SW<  [bioset]
+  120 root         0 SW<  [kblockd]
+  146 root         0 SW   [kworker/1:1]
+  152 root         0 SW   [kswapd0]
+  214 root         0 SW   [fsnotify_mark]
+  815 root         0 SW<  [ffe07000.spi]
+  832 root         0 SW   [kworker/0:1]
+  866 root         0 SW<  [deferwq]
+  868 root         0 SW   [kworker/1:2]
+  905 root         0 SW   [khubd]
+  925 root         0 SW<  [bioset]
+  955 root         0 SWN  [jffs2_gcd_mtd8]
+  975 root         0 SW<  [xfsalloc]
+  976 root         0 SW<  [xfs_mru_cache]
+  979 root         0 SW<  [xfslogd]
+ 1409 root         0 SW   [kworker/u4:2]
+ 1791 root       888 S    /sbin/ubusd
+ 1792 root       772 S    /sbin/askfirst ttyS0 /bin/ash --login
+ 1940 root         0 SW<  [md]
+ 1969 root         0 SW<  [cifsiod]
+ 1993 root         0 SW<  [rpciod]
+ 2034 root         0 SW<  [nfsiod]
+ 2198 root         0 SW<  [cfg80211]
+ 2786 root      1508 S    /sbin/netifd
+ 2796 root         0 SW   [kworker/0:2]
+ 2834 root      3672 S    /usr/sbin/lighttpd -f /etc/lighttpd/lighttpd.conf
+ 2835 root     34076 S    /usr/bin/python /www2/foris.py -s flup
+ 2838 root       784 S    nethist
+ 2849 root      1536 S    udhcpc -p /var/run/udhcpc-eth2.pid -s /lib/netifd/dhcp.script -f -t 0 -i eth2 -C
+ 2918 root      3108 S    /usr/sbin/sshd -f /var/etc/ssh/sshd_config
+ 2924 root       824 S    /usr/sbin/6relayd -l/tmp/hosts/6relayd /usr/sbin/6relayd-update -m1 -Rserver -Dserver . br-lan
+ 3020 root      4996 S    {syslog-ng} supervising syslog-ng
+ 3025 root      5120 S    /usr/sbin/syslog-ng
+ 3072 root      1544 S    /usr/sbin/uhttpd -f -h /www -r turris -x /cgi-bin -u /ubus -t 60 -T 30 -k 20 -A 1 -n 3 -N 100 -R -p 0.0.0
+ 3122 root       808 S    odhcp6c -s /lib/netifd/dhcpv6.script -P0 eth2
+ 3176 root      1096 S    /usr/sbin/ntpclient -i 600 -s -l -D -p 123 -h 0.openwrt.pool.ntp.org
+ 3429 nobody     972 S    /usr/sbin/dnsmasq -C /var/etc/dnsmasq.conf -k
+ 3464 root      7020 S    unbound
+ 3547 root     15244 S    /usr/sbin/collectd
+ 3557 root       832 S    cron
+ 3575 root      1528 S    /usr/sbin/ntpd -n -p ntp.nic.cz 0.openwrt.pool.ntp.org 1.openwrt.pool.ntp.org 2.openwrt.pool.ntp.org 3.op
+ 3635 root      1816 S    hostapd -P /var/run/wifi-phy0.pid -B /var/run/hostapd-phy0.conf
+ 3647 root       792 S    rainbow --daemonize
+ 3687 root      5744 S    {sshd} sshd: root@pts/0
+ 3695 root      1540 S    -ash
+ 3760 root         0 SW   [kworker/0:3]
+ 3935 root         0 SW   [kworker/1:0]
+ 4028 root      1528 R    ps w
