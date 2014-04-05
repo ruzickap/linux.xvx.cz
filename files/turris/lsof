@@ -1,0 +1,1028 @@
+root@turris:~# lsof
+COMMAND     PID  TID   USER   FD      TYPE     DEVICE SIZE/OFF       NODE NAME
+procd         1        root  cwd       DIR       31,8        0          1 /
+procd         1        root  rtd       DIR       31,8        0          1 /
+procd         1        root  txt       REG       31,8    45908       1726 /sbin/procd
+procd         1        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+procd         1        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+procd         1        root  mem       REG       31,8    14372       2052 /lib/libubus.so
+procd         1        root  mem       REG       31,8    33900       1289 /usr/lib/libjson-c.so.2.0.1
+procd         1        root  mem       REG       31,8     5708       2075 /lib/libblobmsg_json.so
+procd         1        root  mem       REG       31,8     8772       2059 /lib/libjson_script.so
+procd         1        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+procd         1        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+procd         1        root    0u      CHR        5,1      0t0       1086 /console
+procd         1        root    1u      CHR        5,1      0t0       1086 /console
+procd         1        root    2u      CHR        5,1      0t0       1086 /console
+procd         1        root    3w      CHR     10,130      0t0       1622 /watchdog
+procd         1        root    4u     0000        0,8        0       1025 anon_inode
+procd         1        root    5u  netlink                 0t0         61 KOBJECT_UEVENT
+procd         1        root    7u     unix 0xc749a800      0t0        432 socket
+procd         1        root    9u     unix 0xc749b600      0t0        764 socket
+kthreadd      2        root  cwd       DIR       31,8        0          1 /
+kthreadd      2        root  rtd       DIR       31,8        0          1 /
+kthreadd      2        root  txt   unknown                                /proc/2/exe
+ksoftirqd     3        root  cwd       DIR       31,8        0          1 /
+ksoftirqd     3        root  rtd       DIR       31,8        0          1 /
+ksoftirqd     3        root  txt   unknown                                /proc/3/exe
+kworker/0     5        root  cwd       DIR       31,8        0          1 /
+kworker/0     5        root  rtd       DIR       31,8        0          1 /
+kworker/0     5        root  txt   unknown                                /proc/5/exe
+migration     7        root  cwd       DIR       31,8        0          1 /
+migration     7        root  rtd       DIR       31,8        0          1 /
+migration     7        root  txt   unknown                                /proc/7/exe
+rcu_bh        8        root  cwd       DIR       31,8        0          1 /
+rcu_bh        8        root  rtd       DIR       31,8        0          1 /
+rcu_bh        8        root  txt   unknown                                /proc/8/exe
+rcu_sched     9        root  cwd       DIR       31,8        0          1 /
+rcu_sched     9        root  rtd       DIR       31,8        0          1 /
+rcu_sched     9        root  txt   unknown                                /proc/9/exe
+migration    10        root  cwd       DIR       31,8        0          1 /
+migration    10        root  rtd       DIR       31,8        0          1 /
+migration    10        root  txt   unknown                                /proc/10/exe
+ksoftirqd    11        root  cwd       DIR       31,8        0          1 /
+ksoftirqd    11        root  rtd       DIR       31,8        0          1 /
+ksoftirqd    11        root  txt   unknown                                /proc/11/exe
+kworker/1    13        root  cwd       DIR       31,8        0          1 /
+kworker/1    13        root  rtd       DIR       31,8        0          1 /
+kworker/1    13        root  txt   unknown                                /proc/13/exe
+khelper      14        root  cwd       DIR       31,8        0          1 /
+khelper      14        root  rtd       DIR       31,8        0          1 /
+khelper      14        root  txt   unknown                                /proc/14/exe
+writeback   116        root  cwd       DIR       31,8        0          1 /
+writeback   116        root  rtd       DIR       31,8        0          1 /
+writeback   116        root  txt   unknown                                /proc/116/exe
+bioset      118        root  cwd       DIR       31,8        0          1 /
+bioset      118        root  rtd       DIR       31,8        0          1 /
+bioset      118        root  txt   unknown                                /proc/118/exe
+kblockd     120        root  cwd       DIR       31,8        0          1 /
+kblockd     120        root  rtd       DIR       31,8        0          1 /
+kblockd     120        root  txt   unknown                                /proc/120/exe
+kswapd0     152        root  cwd       DIR       31,8        0          1 /
+kswapd0     152        root  rtd       DIR       31,8        0          1 /
+kswapd0     152        root  txt   unknown                                /proc/152/exe
+fsnotify_   214        root  cwd       DIR       31,8        0          1 /
+fsnotify_   214        root  rtd       DIR       31,8        0          1 /
+fsnotify_   214        root  txt   unknown                                /proc/214/exe
+ffe07000.   815        root  cwd       DIR       31,8        0          1 /
+ffe07000.   815        root  rtd       DIR       31,8        0          1 /
+ffe07000.   815        root  txt   unknown                                /proc/815/exe
+deferwq     866        root  cwd       DIR       31,8        0          1 /
+deferwq     866        root  rtd       DIR       31,8        0          1 /
+deferwq     866        root  txt   unknown                                /proc/866/exe
+kworker/1   868        root  cwd       DIR       31,8        0          1 /
+kworker/1   868        root  rtd       DIR       31,8        0          1 /
+kworker/1   868        root  txt   unknown                                /proc/868/exe
+khubd       905        root  cwd       DIR       31,8        0          1 /
+khubd       905        root  rtd       DIR       31,8        0          1 /
+khubd       905        root  txt   unknown                                /proc/905/exe
+bioset      925        root  cwd       DIR       31,8        0          1 /
+bioset      925        root  rtd       DIR       31,8        0          1 /
+bioset      925        root  txt   unknown                                /proc/925/exe
+jffs2_gcd   959        root  cwd       DIR       31,8        0          1 /
+jffs2_gcd   959        root  rtd       DIR       31,8        0          1 /
+jffs2_gcd   959        root  txt   unknown                                /proc/959/exe
+xfsalloc    964        root  cwd       DIR       31,8        0          1 /
+xfsalloc    964        root  rtd       DIR       31,8        0          1 /
+xfsalloc    964        root  txt   unknown                                /proc/964/exe
+xfs_mru_c   965        root  cwd       DIR       31,8        0          1 /
+xfs_mru_c   965        root  rtd       DIR       31,8        0          1 /
+xfs_mru_c   965        root  txt   unknown                                /proc/965/exe
+xfslogd     967        root  cwd       DIR       31,8        0          1 /
+xfslogd     967        root  rtd       DIR       31,8        0          1 /
+xfslogd     967        root  txt   unknown                                /proc/967/exe
+scsi_eh_0  1767        root  cwd       DIR       31,8        0          1 /
+scsi_eh_0  1767        root  rtd       DIR       31,8        0          1 /
+scsi_eh_0  1767        root  txt   unknown                                /proc/1767/exe
+usb-stora  1769        root  cwd       DIR       31,8        0          1 /
+usb-stora  1769        root  rtd       DIR       31,8        0          1 /
+usb-stora  1769        root  txt   unknown                                /proc/1769/exe
+ubusd      1924        root  cwd       DIR       31,8        0          1 /
+ubusd      1924        root  rtd       DIR       31,8        0          1 /
+ubusd      1924        root  txt       REG       31,8    13396       1766 /sbin/ubusd
+ubusd      1924        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+ubusd      1924        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+ubusd      1924        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+ubusd      1924        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+ubusd      1924        root    0u      CHR        1,3      0t0       1650 /dev/null
+ubusd      1924        root    1u      CHR        1,3      0t0       1650 /dev/null
+ubusd      1924        root    2u      CHR        1,3      0t0       1650 /dev/null
+ubusd      1924        root    3r      CHR        1,9      0t0       1654 /dev/urandom
+ubusd      1924        root    4u     0000        0,8        0       1025 anon_inode
+ubusd      1924        root    5u     unix 0xc79a3800      0t0       2058 /var/run/ubus.sock
+ubusd      1924        root    6u     unix 0xc749aa00      0t0       2224 /var/run/ubus.sock
+ubusd      1924        root    7u     unix 0xc7b11800      0t0        560 /var/run/ubus.sock
+ubusd      1924        root    8u     unix 0xc76e6600      0t0        789 /var/run/ubus.sock
+ubusd      1924        root    9u     unix 0xc7c3a400      0t0       3395 /var/run/ubus.sock
+askfirst   1927        root  cwd       DIR       31,8        0          1 /
+askfirst   1927        root  rtd       DIR       31,8        0          1 /
+askfirst   1927        root  txt       REG       31,8     2240       1734 /sbin/askfirst
+askfirst   1927        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+askfirst   1927        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+askfirst   1927        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+askfirst   1927        root    0u      CHR       4,64      0t0        204 /dev/ttyS0
+askfirst   1927        root    1u      CHR       4,64      0t0        204 /dev/ttyS0
+askfirst   1927        root    2u      CHR       4,64      0t0        204 /dev/ttyS0
+kworker/1  2000        root  cwd       DIR       31,8        0          1 /
+kworker/1  2000        root  rtd       DIR       31,8        0          1 /
+kworker/1  2000        root  txt   unknown                                /proc/2000/exe
+md         2054        root  cwd       DIR       31,8        0          1 /
+md         2054        root  rtd       DIR       31,8        0          1 /
+md         2054        root  txt   unknown                                /proc/2054/exe
+cifsiod    2077        root  cwd       DIR       31,8        0          1 /
+cifsiod    2077        root  rtd       DIR       31,8        0          1 /
+cifsiod    2077        root  txt   unknown                                /proc/2077/exe
+rpciod     2098        root  cwd       DIR       31,8        0          1 /
+rpciod     2098        root  rtd       DIR       31,8        0          1 /
+rpciod     2098        root  txt   unknown                                /proc/2098/exe
+nfsiod     2125        root  cwd       DIR       31,8        0          1 /
+nfsiod     2125        root  rtd       DIR       31,8        0          1 /
+nfsiod     2125        root  txt   unknown                                /proc/2125/exe
+cfg80211   2272        root  cwd       DIR       31,8        0          1 /
+cfg80211   2272        root  rtd       DIR       31,8        0          1 /
+cfg80211   2272        root  txt   unknown                                /proc/2272/exe
+netifd     2787        root  cwd       DIR       31,8        0          1 /
+netifd     2787        root  rtd       DIR       31,8        0          1 /
+netifd     2787        root  txt       REG       31,8    90196       1768 /sbin/netifd
+netifd     2787        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+netifd     2787        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+netifd     2787        root  mem       REG       31,8    14372       2052 /lib/libubus.so
+netifd     2787        root  mem       REG       31,8    31432       2051 /lib/libuci.so
+netifd     2787        root  mem       REG       31,8    33900       1289 /usr/lib/libjson-c.so.2.0.1
+netifd     2787        root  mem       REG       31,8     5708       2075 /lib/libblobmsg_json.so
+netifd     2787        root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+netifd     2787        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+netifd     2787        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+netifd     2787        root    0u      CHR        1,3      0t0       1650 /dev/null
+netifd     2787        root    1u      CHR        1,3      0t0       1650 /dev/null
+netifd     2787        root    2u      CHR        1,3      0t0       1650 /dev/null
+netifd     2787        root    3u     0000        0,8        0       1025 anon_inode
+netifd     2787        root    4r      DIR       31,8        0       2205 /lib/netifd/proto
+netifd     2787        root    5u     unix 0xc7b11000      0t0       2328 socket
+netifd     2787        root    6r     FIFO        0,7      0t0        545 pipe
+netifd     2787        root    7u     unix 0xc7b32c00      0t0       2329 socket
+netifd     2787        root    8u  netlink                 0t0       2330 ROUTE
+netifd     2787        root    9u  netlink                 0t0       2331 ROUTE
+netifd     2787        root   10u  netlink                 0t0       2332 KOBJECT_UEVENT
+netifd     2787        root   11u     unix 0xc7a1f800      0t0        811 socket
+netifd     2787        root   12r     FIFO        0,7      0t0        586 pipe
+netifd     2787        root   14r     FIFO        0,7      0t0        820 pipe
+kworker/0  2797        root  cwd       DIR       31,8        0          1 /
+kworker/0  2797        root  rtd       DIR       31,8        0          1 /
+kworker/0  2797        root  txt   unknown                                /proc/2797/exe
+udhcpc     2848        root  cwd       DIR       31,8        0       2205 /lib/netifd/proto
+udhcpc     2848        root  rtd       DIR       31,8        0          1 /
+udhcpc     2848        root  txt       REG       31,8   467974       2015 /bin/busybox
+udhcpc     2848        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+udhcpc     2848        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+udhcpc     2848        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+udhcpc     2848        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+udhcpc     2848        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+udhcpc     2848        root    0w     FIFO        0,7      0t0        586 pipe
+udhcpc     2848        root    1w     FIFO        0,7      0t0        586 pipe
+udhcpc     2848        root    2w     FIFO        0,7      0t0        586 pipe
+udhcpc     2848        root    3r     FIFO        0,7      0t0       2346 pipe
+udhcpc     2848        root    4w     FIFO        0,7      0t0       2346 pipe
+udhcpc     2848        root    6r     FIFO        0,7      0t0        545 pipe
+udhcpc     2848        root    8u  netlink                 0t0       2330 ROUTE
+udhcpc     2848        root    9u  netlink                 0t0       2331 ROUTE
+udhcpc     2848        root   10u  netlink                 0t0       2332 KOBJECT_UEVENT
+lighttpd   2857        root  cwd       DIR       31,8        0          1 /
+lighttpd   2857        root  rtd       DIR       31,8        0          1 /
+lighttpd   2857        root  txt       REG       31,8   168972         83 /usr/sbin/lighttpd
+lighttpd   2857        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+lighttpd   2857        root  mem       REG       31,8   226860       1272 /usr/lib/libpcre.so.0.0.1
+lighttpd   2857        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+lighttpd   2857        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+lighttpd   2857        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+lighttpd   2857        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+lighttpd   2857        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+lighttpd   2857        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+lighttpd   2857        root  mem       REG       31,8     4456       1303 /usr/lib/lighttpd/mod_indexfile.so
+lighttpd   2857        root  mem       REG       31,8    42896       1301 /usr/lib/lighttpd/mod_fastcgi.so
+lighttpd   2857        root  mem       REG       31,8    14432       1302 /usr/lib/lighttpd/mod_dirlisting.so
+lighttpd   2857        root  mem       REG       31,8     8664       1300 /usr/lib/lighttpd/mod_staticfile.so
+lighttpd   2857        root    0u      CHR        1,3      0t0       1650 /dev/null
+lighttpd   2857        root    1u      CHR        1,3      0t0       1650 /dev/null
+lighttpd   2857        root    2u      CHR        1,3      0t0       1650 /dev/null
+lighttpd   2857        root    3w      REG       0,11       49        594 /tmp/log/lighttpd/error.log
+lighttpd   2857        root    4u     inet       2348      0t0        TCP *:www (LISTEN)
+lighttpd   2857        root    5u     0000        0,8        0       1025 anon_inode
+lighttpd   2857        root    8r     FIFO        0,7      0t0        549 pipe
+lighttpd   2857        root    9w     FIFO        0,7      0t0        557 pipe
+python     2859        root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859        root  rtd       DIR       31,8        0          1 /
+python     2859        root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859        root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859        root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859        root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859        root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859        root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859        root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859        root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859        root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859        root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859        root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859        root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859        root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859        root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859        root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859        root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859        root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859        root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859        root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859        root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859        root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859        root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859        root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859        root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859        root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859        root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859        root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859        root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859        root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859        root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859        root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859        root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859        root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859        root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859        root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859        root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859        root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3511   root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859 3511   root  rtd       DIR       31,8        0          1 /
+python     2859 3511   root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859 3511   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859 3511   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859 3511   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859 3511   root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859 3511   root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859 3511   root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859 3511   root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859 3511   root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859 3511   root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859 3511   root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859 3511   root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859 3511   root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859 3511   root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859 3511   root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859 3511   root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859 3511   root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859 3511   root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859 3511   root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859 3511   root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859 3511   root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859 3511   root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859 3511   root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859 3511   root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859 3511   root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859 3511   root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859 3511   root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859 3511   root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859 3511   root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859 3511   root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859 3511   root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859 3511   root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859 3511   root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859 3511   root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859 3511   root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859 3511   root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859 3511   root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859 3511   root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3511   root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3511   root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3511   root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3512   root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859 3512   root  rtd       DIR       31,8        0          1 /
+python     2859 3512   root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859 3512   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859 3512   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859 3512   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859 3512   root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859 3512   root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859 3512   root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859 3512   root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859 3512   root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859 3512   root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859 3512   root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859 3512   root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859 3512   root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859 3512   root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859 3512   root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859 3512   root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859 3512   root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859 3512   root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859 3512   root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859 3512   root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859 3512   root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859 3512   root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859 3512   root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859 3512   root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859 3512   root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859 3512   root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859 3512   root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859 3512   root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859 3512   root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859 3512   root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859 3512   root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859 3512   root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859 3512   root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859 3512   root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859 3512   root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859 3512   root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859 3512   root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859 3512   root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3512   root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3512   root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3512   root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3513   root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859 3513   root  rtd       DIR       31,8        0          1 /
+python     2859 3513   root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859 3513   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859 3513   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859 3513   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859 3513   root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859 3513   root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859 3513   root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859 3513   root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859 3513   root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859 3513   root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859 3513   root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859 3513   root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859 3513   root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859 3513   root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859 3513   root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859 3513   root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859 3513   root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859 3513   root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859 3513   root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859 3513   root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859 3513   root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859 3513   root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859 3513   root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859 3513   root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859 3513   root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859 3513   root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859 3513   root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859 3513   root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859 3513   root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859 3513   root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859 3513   root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859 3513   root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859 3513   root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859 3513   root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859 3513   root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859 3513   root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859 3513   root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859 3513   root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3513   root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3513   root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3513   root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3514   root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859 3514   root  rtd       DIR       31,8        0          1 /
+python     2859 3514   root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859 3514   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859 3514   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859 3514   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859 3514   root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859 3514   root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859 3514   root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859 3514   root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859 3514   root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859 3514   root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859 3514   root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859 3514   root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859 3514   root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859 3514   root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859 3514   root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859 3514   root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859 3514   root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859 3514   root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859 3514   root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859 3514   root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859 3514   root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859 3514   root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859 3514   root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859 3514   root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859 3514   root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859 3514   root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859 3514   root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859 3514   root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859 3514   root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859 3514   root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859 3514   root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859 3514   root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859 3514   root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859 3514   root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859 3514   root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859 3514   root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859 3514   root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859 3514   root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3514   root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3514   root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3514   root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3515   root  cwd       DIR       31,8        0        104 /usr/bin
+python     2859 3515   root  rtd       DIR       31,8        0          1 /
+python     2859 3515   root  txt       REG       31,8  1475400        118 /usr/bin/python2.7
+python     2859 3515   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+python     2859 3515   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+python     2859 3515   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+python     2859 3515   root  mem       REG       31,8    28652       1061 /usr/lib/python2.7/lib-dynload/operator.so
+python     2859 3515   root  mem       REG       31,8     9452       1019 /usr/lib/python2.7/lib-dynload/_functools.so
+python     2859 3515   root  mem       REG       31,8    11772       1051 /usr/lib/python2.7/lib-dynload/_locale.so
+python     2859 3515   root  mem       REG       31,8    29384       1035 /usr/lib/python2.7/lib-dynload/_struct.so
+python     2859 3515   root  mem       REG       31,8    16776       1032 /usr/lib/python2.7/lib-dynload/time.so
+python     2859 3515   root  mem       REG       31,8    15516       1011 /usr/lib/python2.7/lib-dynload/cStringIO.so
+python     2859 3515   root  mem       REG       31,8    72012       1057 /usr/lib/python2.7/lib-dynload/datetime.so
+python     2859 3515   root  mem       REG       31,8    21480       1056 /usr/lib/python2.7/lib-dynload/strop.so
+python     2859 3515   root  mem       REG       31,8    23716       1046 /usr/lib/python2.7/lib-dynload/_collections.so
+python     2859 3515   root  mem       REG       31,8    48800       1058 /usr/lib/python2.7/lib-dynload/itertools.so
+python     2859 3515   root  mem       REG       31,8     6352       1037 /usr/lib/python2.7/lib-dynload/_bisect.so
+python     2859 3515   root  mem       REG       31,8    15548       1039 /usr/lib/python2.7/lib-dynload/_heapq.so
+python     2859 3515   root  mem       REG       31,8    71816       1013 /usr/lib/python2.7/lib-dynload/cPickle.so
+python     2859 3515   root  mem       REG       31,8    31288       1052 /usr/lib/python2.7/lib-dynload/math.so
+python     2859 3515   root  mem       REG       31,8    18204       1023 /usr/lib/python2.7/lib-dynload/binascii.so
+python     2859 3515   root  mem       REG       31,8    10468       1025 /usr/lib/python2.7/lib-dynload/_md5.so
+python     2859 3515   root  mem       REG       31,8     9540       1063 /usr/lib/python2.7/lib-dynload/_sha.so
+python     2859 3515   root  mem       REG       31,8    13952       1009 /usr/lib/python2.7/lib-dynload/_sha256.so
+python     2859 3515   root  mem       REG       31,8    42923       1040 /usr/lib/python2.7/lib-dynload/_sha512.so
+python     2859 3515   root  mem       REG       31,8     8956       1029 /usr/lib/python2.7/lib-dynload/_random.so
+python     2859 3515   root  mem       REG       31,8    11036       1048 /usr/lib/python2.7/lib-dynload/fcntl.so
+python     2859 3515   root  mem       REG       31,8   111200       1042 /usr/lib/python2.7/lib-dynload/_ctypes.so
+python     2859 3515   root  mem       REG       31,8    31236       1318 /usr/lib/libffi.so.5.0.10
+python     2859 3515   root  mem       REG       31,8    57528       1026 /usr/lib/python2.7/lib-dynload/_socket.so
+python     2859 3515   root  mem       REG       31,8    26556       2659 /usr/lib/python2.7/lib-dynload/_ssl.so
+python     2859 3515   root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+python     2859 3515   root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+python     2859 3515   root  mem       REG       31,8    19228       1018 /usr/lib/python2.7/lib-dynload/select.so
+python     2859 3515   root  mem       REG       31,8    31400       1016 /usr/lib/python2.7/lib-dynload/_json.so
+python     2859 3515   root  mem       REG       31,8    34872       1031 /usr/lib/python2.7/lib-dynload/array.so
+python     2859 3515   root  mem       REG       31,8    42980       1012 /usr/lib/python2.7/lib-dynload/_elementtree.so
+python     2859 3515   root  mem       REG       31,8   200792       1041 /usr/lib/python2.7/lib-dynload/pyexpat.so
+python     2859 3515   root  mem       REG       31,8     7196       1034 /usr/lib/python2.7/lib-dynload/resource.so
+python     2859 3515   root    0u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+python     2859 3515   root    1u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3515   root    2u      CHR        1,3      0t0       1650 /dev/null
+python     2859 3515   root    3u     unix 0xc749bc00      0t0        596 /tmp/fastcgi.python.socket-0
+nethist    2866        root  cwd       DIR       31,8        0          1 /
+nethist    2866        root  rtd       DIR       31,8        0          1 /
+nethist    2866        root  txt       REG       31,8     6712       2712 /usr/bin/nethist
+nethist    2866        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+nethist    2866        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+nethist    2866        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+nethist    2866        root    0u      CHR        1,3      0t0       1650 /dev/null
+nethist    2866        root    1u      CHR        1,3      0t0       1650 /dev/null
+nethist    2866        root    2u      CHR        1,3      0t0       1650 /dev/null
+nethist    2866        root    8r     FIFO        0,7      0t0        549 pipe
+nethist    2866        root    9w     FIFO        0,7      0t0        593 pipe
+6relayd    2923        root  cwd       DIR       31,8        0          1 /
+6relayd    2923        root  rtd       DIR       31,8        0          1 /
+6relayd    2923        root  txt       REG       31,8    42416         75 /usr/sbin/6relayd
+6relayd    2923        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+6relayd    2923        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+6relayd    2923        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+6relayd    2923        root    0u      CHR        1,3      0t0       1650 /dev/null
+6relayd    2923        root    1u      CHR        1,3      0t0       1650 /dev/null
+6relayd    2923        root    2u      CHR        1,3      0t0       1650 /dev/null
+6relayd    2923        root    3u     0000        0,8        0       1025 anon_inode
+6relayd    2923        root    4u     sock        0,5      0t0       2569 can't identify protocol
+6relayd    2923        root    5u  netlink                 0t0       2570 ROUTE
+6relayd    2923        root    6r     FIFO        0,7      0t0        545 pipe
+6relayd    2923        root    7r      CHR        1,9      0t0       1654 /dev/urandom
+6relayd    2923        root    8u  netlink                 0t0       2330 ROUTE
+6relayd    2923        root    9u  netlink                 0t0       2331 ROUTE
+6relayd    2923        root   10u  netlink                 0t0       2332 KOBJECT_UEVENT
+6relayd    2923        root   11u     sock        0,5      0t0       2571 can't identify protocol
+6relayd    2923        root   12r      REG        0,3        0 4026532527 /proc/2923/net/ipv6_route
+6relayd    2923        root   13u     0000        0,8        0       1025 anon_inode
+6relayd    2923        root   14u     sock        0,5      0t0       2578 can't identify protocol
+6relayd    2923        root   15u     0000        0,8        0       1025 anon_inode
+6relayd    2923        root   16u  netlink                 0t0       2579 ROUTE
+sshd       3024        root  cwd       DIR       31,8        0          1 /
+sshd       3024        root  rtd       DIR       31,8        0          1 /
+sshd       3024        root  txt       REG       31,8   396696         97 /usr/sbin/sshd
+sshd       3024        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+sshd       3024        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+sshd       3024        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+sshd       3024        root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+sshd       3024        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+sshd       3024        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+sshd       3024        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+sshd       3024        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+sshd       3024        root    0u      CHR        1,3      0t0       1650 /dev/null
+sshd       3024        root    1u      CHR        1,3      0t0       1650 /dev/null
+sshd       3024        root    2u      CHR        1,3      0t0       1650 /dev/null
+sshd       3024        root    3u     sock        0,5      0t0       2619 can't identify protocol
+sshd       3024        root    4u     inet       2622      0t0        TCP *:2222 (LISTEN)
+syslog-ng  3054        root  cwd       DIR       31,8        0          1 /
+syslog-ng  3054        root  rtd       DIR       31,8        0          1 /
+syslog-ng  3054        root  txt       REG       31,8   242461         92 /usr/sbin/syslog-ng
+syslog-ng  3054        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+syslog-ng  3054        root  mem       REG       31,8    12404       2212 /lib/librt-0.9.33.2.so
+syslog-ng  3054        root  mem       REG       31,8   937012        200 /usr/lib/libglib-2.0.so.0.2600.1
+syslog-ng  3054        root  mem       REG       31,8    12816       1270 /usr/lib/libevtlog.so.0
+syslog-ng  3054        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+syslog-ng  3054        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+syslog-ng  3054        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+syslog-ng  3054        root  mem       REG       31,8    25927       1331 /usr/lib/libwrap.so.0.7.6
+syslog-ng  3054        root  mem       REG       31,8    51252       1282 /usr/lib/libdbi.so.0.0.5
+syslog-ng  3054        root  mem       REG       31,8   226860       1272 /usr/lib/libpcre.so.0.0.1
+syslog-ng  3054        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+syslog-ng  3054        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+syslog-ng  3054        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+syslog-ng  3054        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+syslog-ng  3054        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+syslog-ng  3054        root    0r      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3054        root    1w      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3054        root    2w      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3054        root    8r     FIFO        0,7      0t0        549 pipe
+syslog-ng  3054        root    9w     FIFO        0,7      0t0        725 pipe
+syslog-ng  3055        root  cwd       DIR       0,11      620       1041 /tmp
+syslog-ng  3055        root  rtd       DIR       31,8        0          1 /
+syslog-ng  3055        root  txt       REG       31,8   242461         92 /usr/sbin/syslog-ng
+syslog-ng  3055        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+syslog-ng  3055        root  mem       REG       31,8    12404       2212 /lib/librt-0.9.33.2.so
+syslog-ng  3055        root  mem       REG       31,8   937012        200 /usr/lib/libglib-2.0.so.0.2600.1
+syslog-ng  3055        root  mem       REG       31,8    12816       1270 /usr/lib/libevtlog.so.0
+syslog-ng  3055        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+syslog-ng  3055        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+syslog-ng  3055        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+syslog-ng  3055        root  mem       REG       31,8    25927       1331 /usr/lib/libwrap.so.0.7.6
+syslog-ng  3055        root  mem       REG       31,8    51252       1282 /usr/lib/libdbi.so.0.0.5
+syslog-ng  3055        root  mem       REG       31,8   226860       1272 /usr/lib/libpcre.so.0.0.1
+syslog-ng  3055        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+syslog-ng  3055        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+syslog-ng  3055        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+syslog-ng  3055        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+syslog-ng  3055        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+syslog-ng  3055        root    0r      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3055        root    1w      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3055        root    2w      CHR        1,3      0t0       1650 /dev/null
+syslog-ng  3055        root    3u     unix 0xc76e7000      0t0       2708 /dev/log
+syslog-ng  3055        root    4w     FIFO        0,7      0t0        737 pipe
+syslog-ng  3055        root    5u     unix 0xc76e6200      0t0       2711 /var/syslog-ng.ctl
+syslog-ng  3055        root    6r      REG        0,3        0 4026532448 /proc/kmsg
+syslog-ng  3055        root    7w      REG       0,11   700787       2713 /tmp/log/messages
+syslog-ng  3055        root    8r     FIFO        0,7      0t0        549 pipe
+syslog-ng  3055        root    9w     FIFO        0,7      0t0        725 pipe
+syslog-ng  3055        root   10u     unix 0xc749a200      0t0       2714 /dev/log
+syslog-ng  3055        root   11u     unix 0xc7a8f000      0t0       2745 /dev/log
+syslog-ng  3055        root   12u     unix 0xc7abb200      0t0        822 /dev/log
+syslog-ng  3055        root   13u     unix 0xc779ba00      0t0       3230 /dev/log
+syslog-ng  3055        root   14u     unix 0xc779b600      0t0       3232 /dev/log
+syslog-ng  3055        root   15u     unix 0xc7aae600      0t0       3389 /dev/log
+syslog-ng  3055        root   16w      REG       0,11      463       4116 /tmp/log/iptables
+syslog-ng  3055        root   17u     unix 0xc7c03600      0t0       4151 /dev/log
+syslog-ng  3055        root   18u     unix 0xc7754000      0t0       4634 /dev/log
+uhttpd     3073        root  cwd       DIR       31,8        0          1 /
+uhttpd     3073        root  rtd       DIR       31,8        0          1 /
+uhttpd     3073        root  txt       REG       31,8    33860         73 /usr/sbin/uhttpd
+uhttpd     3073        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+uhttpd     3073        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+uhttpd     3073        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+uhttpd     3073        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+uhttpd     3073        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+uhttpd     3073        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+uhttpd     3073        root  mem       REG       31,8    10792       1317 /usr/lib/uhttpd_ubus.so
+uhttpd     3073        root  mem       REG       31,8    14372       2052 /lib/libubus.so
+uhttpd     3073        root  mem       REG       31,8     5708       2075 /lib/libblobmsg_json.so
+uhttpd     3073        root  mem       REG       31,8    33900       1289 /usr/lib/libjson-c.so.2.0.1
+uhttpd     3073        root    0u      CHR        1,3      0t0       1650 /dev/null
+uhttpd     3073        root    1u      CHR        1,3      0t0       1650 /dev/null
+uhttpd     3073        root    2u      CHR        1,3      0t0       1650 /dev/null
+uhttpd     3073        root    3u     inet       2716      0t0        TCP *:8080 (LISTEN)
+uhttpd     3073        root    4u     unix 0xc76e6400      0t0       2717 socket
+uhttpd     3073        root    5u     0000        0,8        0       1025 anon_inode
+uhttpd     3073        root    6r     FIFO        0,7      0t0        765 pipe
+uhttpd     3073        root    8r     FIFO        0,7      0t0        549 pipe
+odhcp6c    3124        root  cwd       DIR       31,8        0       2205 /lib/netifd/proto
+odhcp6c    3124        root  rtd       DIR       31,8        0          1 /
+odhcp6c    3124        root  txt       REG       31,8    33672         94 /usr/sbin/odhcp6c
+odhcp6c    3124        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+odhcp6c    3124        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+odhcp6c    3124        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+odhcp6c    3124        root    0w     FIFO        0,7      0t0        820 pipe
+odhcp6c    3124        root    1w     FIFO        0,7      0t0        820 pipe
+odhcp6c    3124        root    2w     FIFO        0,7      0t0        820 pipe
+odhcp6c    3124        root    3r      CHR        1,9      0t0       1654 /dev/urandom
+odhcp6c    3124        root    4u     sock        0,5      0t0       2761 can't identify protocol
+odhcp6c    3124        root    5u     sock        0,5      0t0       2762 can't identify protocol
+odhcp6c    3124        root    6r     FIFO        0,7      0t0        545 pipe
+odhcp6c    3124        root    7u     unix 0xc76e6a00      0t0       2765 socket
+odhcp6c    3124        root    8u  netlink                 0t0       2330 ROUTE
+odhcp6c    3124        root    9u  netlink                 0t0       2331 ROUTE
+odhcp6c    3124        root   10u  netlink                 0t0       2332 KOBJECT_UEVENT
+ntpclient  3178        root  cwd       DIR       31,8        0          1 /
+ntpclient  3178        root  rtd       DIR       31,8        0          1 /
+ntpclient  3178        root  txt       REG       31,8    16642       2900 /usr/sbin/ntpclient
+ntpclient  3178        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+ntpclient  3178        root  mem       REG       31,8    12404       2212 /lib/librt-0.9.33.2.so
+ntpclient  3178        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+ntpclient  3178        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+ntpclient  3178        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+ntpclient  3178        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+ntpclient  3178        root    0u      CHR        1,3      0t0       1650 /dev/null
+ntpclient  3178        root    1u      CHR        1,3      0t0       1650 /dev/null
+ntpclient  3178        root    2w      CHR        1,3      0t0       1650 /dev/null
+ntpclient  3178        root    3u     inet        888      0t0        UDP ip-89-102-175-10.net.upcbroadband.cz:ntp->ntp.raqxs.nl:ntp 
+ntpclient  3178        root    6r     FIFO        0,7      0t0        545 pipe
+ntpclient  3178        root    8u  netlink                 0t0       2330 ROUTE
+ntpclient  3178        root    9u  netlink                 0t0       2331 ROUTE
+ntpclient  3178        root   10u  netlink                 0t0       2332 KOBJECT_UEVENT
+dnsmasq    3516      nobody  cwd       DIR       31,8        0          1 /
+dnsmasq    3516      nobody  rtd       DIR       31,8        0          1 /
+dnsmasq    3516      nobody  txt       REG       31,8   187244         67 /usr/sbin/dnsmasq
+dnsmasq    3516      nobody  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+dnsmasq    3516      nobody  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+dnsmasq    3516      nobody  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+dnsmasq    3516      nobody    0u      CHR        1,3      0t0       1650 /dev/null
+dnsmasq    3516      nobody    1u      CHR        1,3      0t0       1650 /dev/null
+dnsmasq    3516      nobody    2u      CHR        1,3      0t0       1650 /dev/null
+dnsmasq    3516      nobody    3u      REG       0,11      302       2718 /tmp/dhcp.leases
+dnsmasq    3516      nobody    4u     inet       2967      0t0        UDP *:bootps 
+dnsmasq    3516      nobody    5u  netlink                 0t0       2968 ROUTE
+dnsmasq    3516      nobody    6r     FIFO        0,7      0t0       2975 pipe
+dnsmasq    3516      nobody    7w     FIFO        0,7      0t0       2975 pipe
+dnsmasq    3516      nobody    8u     unix 0xc779a800      0t0       2978 socket
+unbound    3526        root  cwd       DIR       31,8        0       1832 /etc/unbound
+unbound    3526        root  rtd       DIR       31,8        0       1832 /etc/unbound
+unbound    3526        root  txt       REG       31,8    80448         71 /usr/sbin/unbound
+unbound    3526        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+unbound    3526        root  mem       REG       31,8   529428       1278 /usr/lib/libunbound.so.2.1.1
+unbound    3526        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+unbound    3526        root  mem       REG       31,8   277268       1316 /usr/lib/libldns.so.1.6.13
+unbound    3526        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+unbound    3526        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+unbound    3526        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+unbound    3526        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+unbound    3526        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+unbound    3526        root    0u      CHR        1,3      0t0       1650 /dev/null
+unbound    3526        root    1u      CHR        1,3      0t0       1650 /dev/null
+unbound    3526        root    2u      CHR        1,3      0t0       1650 /dev/null
+unbound    3526        root    3u     inet       2962      0t0        UDP *:domain 
+unbound    3526        root    4u     inet       2963      0t0        TCP *:domain (LISTEN)
+unbound    3526        root    5u     sock        0,5      0t0       2964 can't identify protocol
+unbound    3526        root    6u     sock        0,5      0t0       2965 can't identify protocol
+unbound    3526        root    7u     unix 0xc779b400      0t0       2979 socket
+unbound    3526        root    8r     FIFO        0,7      0t0        549 pipe
+unbound    3526        root    9u     unix 0xc7a1fe00      0t0       2982 socket
+unbound    3526        root   10r     FIFO        0,7      0t0       2959 pipe
+unbound    3526        root   11w     FIFO        0,7      0t0       2960 pipe
+unbound    3526        root   12u     unix 0xc7aae800      0t0       2983 socket
+collectd   3546        root  cwd       DIR       0,11       40       3003 /tmp/run/collectd
+collectd   3546        root  rtd       DIR       31,8        0          1 /
+collectd   3546        root  txt       REG       31,8   129948       2982 /usr/sbin/collectd
+collectd   3546        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+collectd   3546        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+collectd   3546        root  mem       REG       31,8    33472       2970 /usr/lib/libltdl.so.7.3.0
+collectd   3546        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+collectd   3546        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+collectd   3546        root  mem       REG       31,8     1280       2976 /usr/lib/libiptc.so.0.0.0
+collectd   3546        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+collectd   3546        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+collectd   3546        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+collectd   3546        root  mem       REG       31,8    23288       1291 /usr/lib/libip4tc.so.0.1.0
+collectd   3546        root  mem       REG       31,8    25412        577 /usr/lib/libip6tc.so.0.1.0
+collectd   3546        root  mem       REG       31,8    18520       3005 /usr/lib/collectd/rrdtool.so
+collectd   3546        root  mem       REG       31,8   594560       2992 /usr/lib/librrd.so.0.0.0
+collectd   3546        root  mem       REG       31,8     4908       2988 /usr/lib/collectd/iwinfo.so
+collectd   3546        root  mem       REG       31,8    52208       1292 /usr/lib/libiwinfo.so
+collectd   3546        root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+collectd   3546        root  mem       REG       31,8     3567       2999 /usr/lib/collectd/interface.so
+collectd   3546        root  mem       REG       31,8     2996       3002 /usr/lib/collectd/load.so
+collectd   3546        root    0u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546        root    1u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546        root    2u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546        root    8r     FIFO        0,7      0t0        549 pipe
+collectd   3546        root   10w     FIFO        0,7      0t0       3002 pipe
+collectd   3546 3547   root  cwd       DIR       0,11       40       3003 /tmp/run/collectd
+collectd   3546 3547   root  rtd       DIR       31,8        0          1 /
+collectd   3546 3547   root  txt       REG       31,8   129948       2982 /usr/sbin/collectd
+collectd   3546 3547   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+collectd   3546 3547   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+collectd   3546 3547   root  mem       REG       31,8    33472       2970 /usr/lib/libltdl.so.7.3.0
+collectd   3546 3547   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+collectd   3546 3547   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+collectd   3546 3547   root  mem       REG       31,8     1280       2976 /usr/lib/libiptc.so.0.0.0
+collectd   3546 3547   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+collectd   3546 3547   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+collectd   3546 3547   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+collectd   3546 3547   root  mem       REG       31,8    23288       1291 /usr/lib/libip4tc.so.0.1.0
+collectd   3546 3547   root  mem       REG       31,8    25412        577 /usr/lib/libip6tc.so.0.1.0
+collectd   3546 3547   root  mem       REG       31,8    18520       3005 /usr/lib/collectd/rrdtool.so
+collectd   3546 3547   root  mem       REG       31,8   594560       2992 /usr/lib/librrd.so.0.0.0
+collectd   3546 3547   root  mem       REG       31,8     4908       2988 /usr/lib/collectd/iwinfo.so
+collectd   3546 3547   root  mem       REG       31,8    52208       1292 /usr/lib/libiwinfo.so
+collectd   3546 3547   root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+collectd   3546 3547   root  mem       REG       31,8     3567       2999 /usr/lib/collectd/interface.so
+collectd   3546 3547   root  mem       REG       31,8     2996       3002 /usr/lib/collectd/load.so
+collectd   3546 3547   root    0u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3547   root    1u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3547   root    2u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3547   root    8r     FIFO        0,7      0t0        549 pipe
+collectd   3546 3547   root   10w     FIFO        0,7      0t0       3002 pipe
+collectd   3546 3548   root  cwd       DIR       0,11       40       3003 /tmp/run/collectd
+collectd   3546 3548   root  rtd       DIR       31,8        0          1 /
+collectd   3546 3548   root  txt       REG       31,8   129948       2982 /usr/sbin/collectd
+collectd   3546 3548   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+collectd   3546 3548   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+collectd   3546 3548   root  mem       REG       31,8    33472       2970 /usr/lib/libltdl.so.7.3.0
+collectd   3546 3548   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+collectd   3546 3548   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+collectd   3546 3548   root  mem       REG       31,8     1280       2976 /usr/lib/libiptc.so.0.0.0
+collectd   3546 3548   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+collectd   3546 3548   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+collectd   3546 3548   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+collectd   3546 3548   root  mem       REG       31,8    23288       1291 /usr/lib/libip4tc.so.0.1.0
+collectd   3546 3548   root  mem       REG       31,8    25412        577 /usr/lib/libip6tc.so.0.1.0
+collectd   3546 3548   root  mem       REG       31,8    18520       3005 /usr/lib/collectd/rrdtool.so
+collectd   3546 3548   root  mem       REG       31,8   594560       2992 /usr/lib/librrd.so.0.0.0
+collectd   3546 3548   root  mem       REG       31,8     4908       2988 /usr/lib/collectd/iwinfo.so
+collectd   3546 3548   root  mem       REG       31,8    52208       1292 /usr/lib/libiwinfo.so
+collectd   3546 3548   root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+collectd   3546 3548   root  mem       REG       31,8     3567       2999 /usr/lib/collectd/interface.so
+collectd   3546 3548   root  mem       REG       31,8     2996       3002 /usr/lib/collectd/load.so
+collectd   3546 3548   root    0u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3548   root    1u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3548   root    2u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3548   root    8r     FIFO        0,7      0t0        549 pipe
+collectd   3546 3548   root   10w     FIFO        0,7      0t0       3002 pipe
+collectd   3546 3549   root  cwd       DIR       0,11       40       3003 /tmp/run/collectd
+collectd   3546 3549   root  rtd       DIR       31,8        0          1 /
+collectd   3546 3549   root  txt       REG       31,8   129948       2982 /usr/sbin/collectd
+collectd   3546 3549   root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+collectd   3546 3549   root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+collectd   3546 3549   root  mem       REG       31,8    33472       2970 /usr/lib/libltdl.so.7.3.0
+collectd   3546 3549   root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+collectd   3546 3549   root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+collectd   3546 3549   root  mem       REG       31,8     1280       2976 /usr/lib/libiptc.so.0.0.0
+collectd   3546 3549   root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+collectd   3546 3549   root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+collectd   3546 3549   root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+collectd   3546 3549   root  mem       REG       31,8    23288       1291 /usr/lib/libip4tc.so.0.1.0
+collectd   3546 3549   root  mem       REG       31,8    25412        577 /usr/lib/libip6tc.so.0.1.0
+collectd   3546 3549   root  mem       REG       31,8    18520       3005 /usr/lib/collectd/rrdtool.so
+collectd   3546 3549   root  mem       REG       31,8   594560       2992 /usr/lib/librrd.so.0.0.0
+collectd   3546 3549   root  mem       REG       31,8     4908       2988 /usr/lib/collectd/iwinfo.so
+collectd   3546 3549   root  mem       REG       31,8    52208       1292 /usr/lib/libiwinfo.so
+collectd   3546 3549   root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+collectd   3546 3549   root  mem       REG       31,8     3567       2999 /usr/lib/collectd/interface.so
+collectd   3546 3549   root  mem       REG       31,8     2996       3002 /usr/lib/collectd/load.so
+collectd   3546 3549   root    0u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3549   root    1u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3549   root    2u      CHR        1,3      0t0       1650 /dev/null
+collectd   3546 3549   root    8r     FIFO        0,7      0t0        549 pipe
+collectd   3546 3549   root   10w     FIFO        0,7      0t0       3002 pipe
+cron       3556        root  cwd       DIR       0,11       60       3277 /tmp/spool/cron
+cron       3556        root  rtd       DIR       31,8        0          1 /
+cron       3556        root  txt       REG       31,8    50108         96 /usr/sbin/cron
+cron       3556        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+cron       3556        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+cron       3556        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+cron       3556        root    0u      CHR        1,3      0t0       1650 /dev/null
+cron       3556        root    1u      CHR        1,3      0t0       1650 /dev/null
+cron       3556        root    2u      CHR        1,3      0t0       1650 /dev/null
+cron       3556        root    3u      REG       0,11        5       3013 /tmp/run/cron.pid
+cron       3556        root    4u     unix 0xc7aaf600      0t0       3280 socket
+cron       3556        root    8r     FIFO        0,7      0t0        549 pipe
+cron       3556        root   10w     FIFO        0,7      0t0       3275 pipe
+ntpd       3574        root  cwd       DIR       31,8        0          1 /
+ntpd       3574        root  rtd       DIR       31,8        0          1 /
+ntpd       3574        root  txt       REG       31,8   467974       2015 /bin/busybox
+ntpd       3574        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+ntpd       3574        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+ntpd       3574        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+ntpd       3574        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+ntpd       3574        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+ntpd       3574        root    0u      CHR        1,3      0t0       1650 /dev/null
+ntpd       3574        root    1u      CHR        1,3      0t0       1650 /dev/null
+ntpd       3574        root    2u      CHR        1,3      0t0       1650 /dev/null
+ntpd       3574        root    6r     FIFO        0,7      0t0       3284 pipe
+ntpd       3574        root    8r     FIFO        0,7      0t0        549 pipe
+hostapd    3629        root  cwd       DIR       31,8        0          1 /
+hostapd    3629        root  rtd       DIR       31,8        0          1 /
+hostapd    3629        root  txt       REG       31,8   558860         68 /usr/sbin/hostapd
+hostapd    3629        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+hostapd    3629        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+hostapd    3629        root  mem       REG       31,8    14372       2052 /lib/libubus.so
+hostapd    3629        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+hostapd    3629        root  mem       REG       31,8    30012       1326 /usr/lib/libnl-tiny.so
+hostapd    3629        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+hostapd    3629        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+hostapd    3629        root    0u      CHR        1,3      0t0       1650 /dev/null
+hostapd    3629        root    1u      CHR        1,3      0t0       1650 /dev/null
+hostapd    3629        root    2u      CHR        1,3      0t0       1650 /dev/null
+hostapd    3629        root    3u  netlink                 0t0       3039 ROUTE
+hostapd    3629        root    4u  netlink                 0t0       3040 GENERIC
+hostapd    3629        root    5u  netlink                 0t0       3041 GENERIC
+hostapd    3629        root    6r     FIFO        0,7      0t0        545 pipe
+hostapd    3629        root    7u     sock        0,5      0t0       3042 can't identify protocol
+hostapd    3629        root    8u  netlink                 0t0       3066 GENERIC
+hostapd    3629        root    9w     FIFO        0,7      0t0        549 pipe
+hostapd    3629        root   10u     pack       3045      0t0          0 type=SOCK_DGRAM
+hostapd    3629        root   11u  netlink                 0t0       3067 GENERIC
+hostapd    3629        root   12u     pack       3070      0t0      34958 type=SOCK_DGRAM
+hostapd    3629        root   13u     unix 0xc7c3a600      0t0       3071 socket
+hostapd    3629        root   14u     pack       3401      0t0      35085 type=SOCK_RAW
+hostapd    3629        root   15u     unix 0xc7c0e000      0t0       3403 /var/run/hostapd-phy0/wlan0
+hostapd    3629        root   16u  netlink                 0t0       3406 ROUTE
+hostapd    3629        root   17u     0000        0,8        0       1025 anon_inode
+hostapd    3629        root   18u     unix 0xc7c03800      0t0       4150 socket
+rainbow    3643        root  cwd       DIR       31,8        0          1 /
+rainbow    3643        root  rtd       DIR       31,8        0          1 /
+rainbow    3643        root  txt       REG       31,8    10484        145 /usr/bin/rainbow
+rainbow    3643        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+rainbow    3643        root  mem       CHR        1,1                1646 /dev/mem
+rainbow    3643        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+rainbow    3643        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+rainbow    3643        root    0u      CHR        1,3      0t0       1650 /dev/null
+rainbow    3643        root    1u      CHR        1,3      0t0       1650 /dev/null
+rainbow    3643        root    2u      CHR        1,3      0t0       1650 /dev/null
+rainbow    3643        root    3u      CHR        1,1      0t0       1646 /dev/mem
+rainbow    3643        root    4u      CHR        1,3      0t0       1650 /dev/null
+rainbow    3643        root    5r      REG        0,3        0 4026532405 /proc/3643/net/dev
+rainbow    3643        root    8r     FIFO        0,7      0t0        549 pipe
+rainbow    3643        root   10r     FIFO        0,7      0t0       3288 pipe
+rainbow    3643        root   11w     FIFO        0,7      0t0       3289 pipe
+ucollect   4088        root  cwd       DIR       31,8        0       1724 /root
+ucollect   4088        root  rtd       DIR       31,8        0          1 /
+ucollect   4088        root  txt       REG       31,8     2912       2634 /usr/bin/ucollect
+ucollect   4088        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+ucollect   4088        root  mem       REG       31,8    42312       2635 /usr/lib/libucollect_core.so
+ucollect   4088        root  mem       REG       31,8   209597       2626 /usr/lib/libpcap.so.1.3.0
+ucollect   4088        root  mem       REG       31,8    12404       2212 /lib/librt-0.9.33.2.so
+ucollect   4088        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+ucollect   4088        root  mem       REG       31,8    31432       2051 /lib/libuci.so
+ucollect   4088        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+ucollect   4088        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+ucollect   4088        root  mem       REG       31,8   529428       1278 /usr/lib/libunbound.so.2.1.1
+ucollect   4088        root  mem       REG       31,8    29316       1275 /usr/lib/libatsha204.so
+ucollect   4088        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+ucollect   4088        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+ucollect   4088        root  mem       REG       31,8    70104       2177 /lib/libpthread-0.9.33.2.so
+ucollect   4088        root  mem       REG       31,8    29093       2061 /lib/libubox.so
+ucollect   4088        root  mem       REG       31,8   277268       1316 /usr/lib/libldns.so.1.6.13
+ucollect   4088        root  mem       REG        0,5                5409 socket:[5409] (stat: No such file or directory)
+ucollect   4088        root  mem       REG        0,5                5413 socket:[5413] (stat: No such file or directory)
+ucollect   4088        root  mem       REG       31,8     2684       2656 /usr/lib/libplugin_ucollect_badconf_12.so
+ucollect   4088        root  mem       REG       31,8    10772       2650 /usr/lib/libplugin_ucollect_buckets_12.so
+ucollect   4088        root  mem       REG       31,8     3752       2644 /usr/lib/libplugin_ucollect_count_12.so
+ucollect   4088        root    0u      CHR        1,3      0t0       1650 /dev/null
+ucollect   4088        root    1u      CHR        1,3      0t0       1650 /dev/null
+ucollect   4088        root    2u      CHR        1,3      0t0       1650 /dev/null
+ucollect   4088        root    3u     unix 0xc7754c00      0t0       4633 socket
+ucollect   4088        root    4u     0000        0,8        0       1025 anon_inode
+ucollect   4088        root    5u     pack       5409      0t0        ALL type=SOCK_RAW
+ucollect   4088        root    6u     pack       5413      0t0        ALL type=SOCK_RAW
+ucollect   4088        root    7u     unix 0xc7c0c000      0t0       5421 socket
+ucollect   4088        root    8r     FIFO        0,7      0t0        549 pipe
+ucollect   4088        root   10w     FIFO        0,7      0t0       3275 pipe
+ucollect   4088        root   11u     unix 0xc7c0c400      0t0       5423 socket
+socat      4099        root  cwd       DIR       31,8        0       1724 /root
+socat      4099        root  rtd       DIR       31,8        0          1 /
+socat      4099        root  txt       REG       31,8   234244        134 /usr/bin/socat
+socat      4099        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+socat      4099        root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+socat      4099        root  mem       REG       31,8   322772       1307 /usr/lib/libssl.so.1.0.0
+socat      4099        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+socat      4099        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+socat      4099        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+socat      4099        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+socat      4099        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+socat      4099        root    0u     unix 0xc7c0c600      0t0       5422 socket
+socat      4099        root    1u     unix 0xc7c0c600      0t0       5422 socket
+socat      4099        root    2u     unix 0xc7c0d000      0t0       5424 socket
+socat      4099        root    3u     inet       4642      0t0        TCP ip-89-102-175-10.net.upcbroadband.cz:60288->api.turris.cz:5678 (ESTABLISHED)
+socat      4099        root    4u     0000        0,8        0       1025 anon_inode
+socat      4099        root    5u     pack       5409      0t0        ALL type=SOCK_RAW
+socat      4099        root    6u     pack       5413      0t0        ALL type=SOCK_RAW
+socat      4099        root    8r     FIFO        0,7      0t0        549 pipe
+socat      4099        root   10w     FIFO        0,7      0t0       3275 pipe
+sleep      5531        root  cwd       DIR       31,8        0       1724 /root
+sleep      5531        root  rtd       DIR       31,8        0          1 /
+sleep      5531        root  txt       REG       31,8   467974       2015 /bin/busybox
+sleep      5531        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+sleep      5531        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+sleep      5531        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+sleep      5531        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+sleep      5531        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+sleep      5531        root    0r      CHR        1,3      0t0       1650 /dev/null
+sleep      5531        root    1w      CHR        1,3      0t0       1650 /dev/null
+sleep      5531        root    2w      CHR        1,3      0t0       1650 /dev/null
+sleep      5531        root    8r     FIFO        0,7      0t0        549 pipe
+sleep      5531        root   10w     FIFO        0,7      0t0       3275 pipe
+kworker/1  5547        root  cwd       DIR       31,8        0          1 /
+kworker/1  5547        root  rtd       DIR       31,8        0          1 /
+kworker/1  5547        root  txt   unknown                                /proc/5547/exe
+kworker/0  5595        root  cwd       DIR       31,8        0          1 /
+kworker/0  5595        root  rtd       DIR       31,8        0          1 /
+kworker/0  5595        root  txt   unknown                                /proc/5595/exe
+kworker/u  5714        root  cwd       DIR       31,8        0          1 /
+kworker/u  5714        root  rtd       DIR       31,8        0          1 /
+kworker/u  5714        root  txt   unknown                                /proc/5714/exe
+kworker/1  6013        root  cwd       DIR       31,8        0          1 /
+kworker/1  6013        root  rtd       DIR       31,8        0          1 /
+kworker/1  6013        root  txt   unknown                                /proc/6013/exe
+kworker/0  6322        root  cwd       DIR       31,8        0          1 /
+kworker/0  6322        root  rtd       DIR       31,8        0          1 /
+kworker/0  6322        root  txt   unknown                                /proc/6322/exe
+lsof       6328        root  cwd       DIR       31,8        0       1724 /root
+lsof       6328        root  rtd       DIR       31,8        0          1 /
+lsof       6328        root  txt       REG       31,8   132020       4431 /usr/bin/lsof
+lsof       6328        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+lsof       6328        root  mem       REG       31,8    68736       3821 /lib/librpc.so
+lsof       6328        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+lsof       6328        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+lsof       6328        root    0u      CHR      136,0      0t0          3 /dev/pts/0
+lsof       6328        root    1u      CHR      136,0      0t0          3 /dev/pts/0
+lsof       6328        root    2u      CHR      136,0      0t0          3 /dev/pts/0
+lsof       6328        root    3r      DIR        0,3        0          1 /proc
+lsof       6328        root    4r      DIR        0,3        0     143828 /proc/6328/fd
+lsof       6328        root    5w     FIFO        0,7      0t0     143833 pipe
+lsof       6328        root    6r     FIFO        0,7      0t0     143834 pipe
+lsof       6329        root  cwd       DIR       31,8        0       1724 /root
+lsof       6329        root  rtd       DIR       31,8        0          1 /
+lsof       6329        root  txt       REG       31,8   132020       4431 /usr/bin/lsof
+lsof       6329        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+lsof       6329        root  mem       REG       31,8    68736       3821 /lib/librpc.so
+lsof       6329        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+lsof       6329        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+lsof       6329        root    4r     FIFO        0,7      0t0     143833 pipe
+lsof       6329        root    7w     FIFO        0,7      0t0     143834 pipe
+kworker/u 10574        root  cwd       DIR       31,8        0          1 /
+kworker/u 10574        root  rtd       DIR       31,8        0          1 /
+kworker/u 10574        root  txt   unknown                                /proc/10574/exe
+kworker/0 16058        root  cwd       DIR       31,8        0          1 /
+kworker/0 16058        root  rtd       DIR       31,8        0          1 /
+kworker/0 16058        root  txt   unknown                                /proc/16058/exe
+sshd      28037        root  cwd       DIR       31,8        0          1 /
+sshd      28037        root  rtd       DIR       31,8        0          1 /
+sshd      28037        root  txt       REG       31,8   396696         97 /usr/sbin/sshd
+sshd      28037        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+sshd      28037        root  mem       REG       31,8  1410436       1280 /usr/lib/libcrypto.so.1.0.0
+sshd      28037        root  mem       REG       31,8    12436       2221 /lib/libdl-0.9.33.2.so
+sshd      28037        root  mem       REG       31,8     4120       2179 /lib/libutil-0.9.33.2.so
+sshd      28037        root  mem       REG       31,8    78591       1320 /usr/lib/libz.so.1.2.8
+sshd      28037        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+sshd      28037        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+sshd      28037        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+sshd      28037        root  DEL       REG        0,4              132925 /dev/zero
+sshd      28037        root  DEL       REG        0,4              133750 /dev/zero
+sshd      28037        root    0u      CHR        1,3      0t0       1650 /dev/null
+sshd      28037        root    1u      CHR        1,3      0t0       1650 /dev/null
+sshd      28037        root    2u      CHR        1,3      0t0       1650 /dev/null
+sshd      28037        root    3u     inet     133744      0t0        TCP 192.168.1.1:2222->192.168.1.2:56682 (ESTABLISHED)
+sshd      28037        root    4r     FIFO        0,7      0t0     133751 pipe
+sshd      28037        root    5w     FIFO        0,7      0t0     133751 pipe
+sshd      28037        root    6u      CHR        5,2      0t0       1675 /dev/ptmx
+sshd      28037        root    8u      CHR        5,2      0t0       1675 /dev/ptmx
+sshd      28037        root    9u      CHR        5,2      0t0       1675 /dev/ptmx
+ash       28039        root  cwd       DIR       31,8        0       1724 /root
+ash       28039        root  rtd       DIR       31,8        0          1 /
+ash       28039        root  txt       REG       31,8   467974       2015 /bin/busybox
+ash       28039        root  mem       REG       31,8    29052       2192 /lib/ld-uClibc-0.9.33.2.so
+ash       28039        root  mem       REG       31,8    20724       2217 /lib/libcrypt-0.9.33.2.so
+ash       28039        root  mem       REG       31,8    61540       2191 /lib/libm-0.9.33.2.so
+ash       28039        root  mem       REG       31,8   102808       2173 /lib/libgcc_s.so.1
+ash       28039        root  mem       REG       31,8   326616       2220 /lib/libuClibc-0.9.33.2.so
+ash       28039        root    0u      CHR      136,0      0t0          3 /dev/pts/0
+ash       28039        root    1u      CHR      136,0      0t0          3 /dev/pts/0
+ash       28039        root    2u      CHR      136,0      0t0          3 /dev/pts/0
+ash       28039        root   10u      CHR        5,0      0t0       1674 /dev/tty
+kworker/u 28835        root  cwd       DIR       31,8        0          1 /
+kworker/u 28835        root  rtd       DIR       31,8        0          1 /
+kworker/u 28835        root  txt   unknown                                /proc/28835/exe
