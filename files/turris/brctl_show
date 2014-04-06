@@ -1,0 +1,5 @@
+turris ~ # brctl show
+bridge name     bridge id               STP enabled     interfaces
+br-lan          7fff.d858d70002dc       no              eth0
+                                                        eth1
+                                                        wlan0
