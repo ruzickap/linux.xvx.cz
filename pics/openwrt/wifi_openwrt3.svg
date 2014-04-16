@@ -3758,7 +3758,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.9899495"
      inkscape:cx="483.31648"
-     inkscape:cy="395.73122"
+     inkscape:cy="396.2363"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -5587,7 +5587,7 @@
          sodipodi:role="line"
          id="tspan10520"
          x="683.34784"
-         y="688.13025">[eth0.2] DHCP</tspan></text>
+         y="688.13025">[eth2] DHCP</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
