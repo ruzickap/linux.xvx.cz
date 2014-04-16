@@ -1,0 +1,21 @@
+
+config led 'all'
+	option color '33FF33'
+	option status 'auto'
+
+config led 'wifi'
+	option color 'blue'
+	option status 'auto'
+
+config led 'pwr'
+	option color 'red'
+	option status 'auto'
+
+config led 'lan'
+	option color 'green'
+	option status 'auto'
+
+config led 'wan'
+	option color 'FFFF00'
+	option status 'auto'
+

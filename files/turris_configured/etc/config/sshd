@@ -1,0 +1,7 @@
+
+config openssh
+	option AuthorizedKeysFile '.ssh/authorized_keys'
+	option UsePrivilegeSeparation 'sandbox'
+	list Subsystem 'sftp /usr/lib/sftp-server'
+	list Port '2222'
+
