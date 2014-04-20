@@ -2,3 +2,19 @@ MAILTO="petr.ruzicka@gmail.com"
 
 */5  * * * * vnstat -u
 0    2 * * * /etc/graphs-vnstat.sh
+0    * * * * /data/mydigitemp/mydigitemp-graph.sh daily
+1    0 * * * /data/mydigitemp/mydigitemp-graph.sh weekly
+2    0 * * 0 /data/mydigitemp/mydigitemp-graph.sh monthly
+3    0 1 * * /data/mydigitemp/mydigitemp-graph.sh yearly
+4    0 1 1 * /data/mydigitemp/mydigitemp-graph.sh 2years
+5    0 1 1 * /data/mydigitemp/mydigitemp-graph.sh 5years
+6    0 1 1 * /data/mydigitemp/mydigitemp-graph.sh 10years
+7    * * * * /data/temperature_sensors/temperature_sensors-graph.sh daily
+1    1 * * * /data/temperature_sensors/temperature_sensors-graph.sh weekly
+2    1 * * 0 /data/temperature_sensors/temperature_sensors-graph.sh monthly
+3    1 1 * * /data/temperature_sensors/temperature_sensors-graph.sh yearly
+4    1 1 1 * /data/temperature_sensors/temperature_sensors-graph.sh 2years
+5    1 1 1 * /data/temperature_sensors/temperature_sensors-graph.sh 5years
+6    1 1 1 * /data/temperature_sensors/temperature_sensors-graph.sh 10years
+*/10 * * * * test -x /data/mydigitemp/mydigitemp.sh && /data/mydigitemp/mydigitemp.sh
+*/10 * * * * test -f /data/temperature_sensors/temperature_sensors.rrd && rrdtool update /data/temperature_sensors/temperature_sensors.rrd $(date +\%s):$(thermometer | tr -s \\n ' ' | awk '{print $2":"$4}')
