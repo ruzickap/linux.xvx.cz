@@ -98,3 +98,10 @@ config host
 	option ip '192.168.1.135'
 	option mac '00:1f:c6:e9:f5:14'
 
+config dhcp 'wifi_open'
+	option interface 'wifi_open'
+	option start '2'
+	option limit '253'
+	list dhcp_option '6,10.0.0.1'
+	option leasetime '1h'
+

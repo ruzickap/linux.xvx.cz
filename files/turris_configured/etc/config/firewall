@@ -97,6 +97,7 @@ config include
 
 config include
 	option path '/usr/share/firewall/turris'
+	option reload '1'
 
 config rule
 	option name 'ssh'
@@ -133,3 +134,37 @@ config rule
 	option target 'ACCEPT'
 	option proto 'tcp'
 	option dest_port '80'
+
+config zone
+	option name 'wifi_open'
+	list network 'wifi_open'
+	option input 'REJECT'
+	option forward 'REJECT'
+	option output 'ACCEPT'
+
+config forwarding
+	option src 'wifi_open'
+	option dest 'wan'
+
+config rule
+	option name 'icmp-echo-request'
+	option src 'wifi_open'
+	option target 'ACCEPT'
+	option proto 'icmp'
+	option icmp_type 'echo-request'
+
+config rule
+	option name 'dhcp'
+	option src 'wifi_open'
+	option target 'ACCEPT'
+	option proto 'udp'
+	option src_port '67-68'
+	option dest_port '67-68'
+
+config rule
+	option name 'dns'
+	option src 'wifi_open'
+	option target 'ACCEPT'
+	option proto 'tcpudp'
+	option dest_port '53'
+

@@ -52,3 +52,12 @@ config wifi-iface
 	option mode 'ap'
 	option ssid 'Turris'
 	option encryption 'none'
+
+config wifi-iface
+	option device 'radio0'
+	option mode 'ap'
+	option ssid 'medlanky.xvx.cz'
+	option network 'wifi_open'
+	option encryption 'none'
+	option isolate '1'
+
