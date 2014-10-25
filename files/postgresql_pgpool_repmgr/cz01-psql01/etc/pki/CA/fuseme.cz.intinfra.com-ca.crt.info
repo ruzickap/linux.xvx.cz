@@ -1,0 +1,41 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 13239513146828470945 (0xb7bc330fa3d33aa1)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CZ, ST=Czech Republic, O=Example, Inc., L=Brno, CN=example.com Certificate Authority
+        Validity
+            Not Before: Oct 23 09:xx:12 2014 GMT
+            Not After : Oct 20 09:xx:12 2024 GMT
+        Subject: C=CZ, ST=Czech Republic, O=Example, Inc., L=Brno, CN=example.com Certificate Authority
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:xx:e3:xx:4c:xx:4f:xx:9c:xx:36:xx:1d:xx:b8:
+                    38:xx:af:xx:01:xx:4b:xx:fb:xx:6b:xx:b9:xx:22:
+                    fc:xx:5a:xx:68:xx:ae:xx:c8:xx:e7:xx:63:xx:91:
+                    cd:xx:3e:xx:16:xx:d6:xx:87:xx:f3:xx:3b:xx:5e:
+                    73:xx:92:xx:a8:xx:d8:xx:2a:xx:f9:xx:5c:xx:da:
+                    89:xx:c9:xx:00:xx:8c:xx:d4:xx:1d:xx:37:xx:ce:
+                    c7:xx:6c:xx:bf:xx:df:xx:a5:xx:1b:xx:59:xx:19:
+                    44:xx:4c:xx:64:xx:80:xx:90:xx:4a:xx:08:xx:1d:
+                    b6:xx:cd:xx:f7:xx:97:xx:bf
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                8C:xx:0B:xx:41:xx:9F:xx:9F:xx:C1:xx:A3:xx:4F:xx:B0:xx:D4:A3
+            X509v3 Authority Key Identifier: 
+                keyid:xx:C7:xx:40:xx:39:xx:2D:xx:49:xx:CF:xx:03:xx:63:xx:C9:xx:A3
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha1WithRSAEncryption
+         3f:xx:ad:xx:74:xx:27:xx:49:xx:d8:xx:d1:xx:52:xx:61:xx:
+         ca:xx:e0:xx:58:xx:c6:xx:1c:xx:a1:xx:d2:xx:49:xx:20:xx:
+         77:xx:d4:xx:29:xx:ab:xx:66:xx:fc:xx:ef:xx:dd:xx:42:xx:
+         47:xx:9c:xx:f7:xx:cb:xx:24:xx:fa:xx:f5:xx:39:xx:71:xx:
+         7b:xx:cb:xx:ab:xx:9d:xx:6b:xx:e2:xx:36:xx:8a:xx:fd:xx:
+         2b:xx:6d:xx:c2:xx:91:xx:ed:xx:d0:xx:90:xx:7c:xx:38:xx:
+         71:xx:7f:xx:e2:xx:60:xx:f4:xx:45:xx:8a:xx:cd:xx:0a:xx:
+         01:ea

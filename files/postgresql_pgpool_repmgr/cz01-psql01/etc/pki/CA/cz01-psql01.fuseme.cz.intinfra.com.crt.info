@@ -1,0 +1,52 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CZ, ST=Czech Republic, O=Example, Inc., L=Brno, CN=example.com Certificate Authority
+        Validity
+            Not Before: Oct 23 09:xx:13 2014 GMT
+            Not After : Oct 23 09:xx:13 2015 GMT
+        Subject: C=CZ, ST=Czech Republic, L=Brno, O=Example, OU=Deployment, CN=cz01-psql01.example.com/emailAddress=root@example.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:xx:d3:xx:f7:xx:ea:xx:d0:xx:3c:xx:6b:xx:c7:
+                    47:xx:a2:xx:a1:xx:ea:xx:3f:xx:83:xx:bb:xx:dc:
+                    7e:xx:aa:xx:cc:xx:fc:xx:20:xx:35:xx:77:xx:54:
+                    9f:xx:6c:xx:49:xx:5d:xx:ba:xx:0e:xx:0b:xx:a8:
+                    a4:xx:aa:xx:17:xx:78:xx:5e:xx:76:xx:91:xx:16:
+                    7d:xx:2a:xx:e0:xx:91:xx:1a:xx:93:xx:20:xx:15:
+                    0e:xx:c3:xx:e3:xx:bc:xx:5a:xx:d4:xx:39:xx:dc:
+                    71:xx:aa:xx:6f:xx:e7:xx:81:xx:0a:xx:c9:xx:00:
+                    79:xx:1d:xx:0a:xx:89:xx:03:xx:a2:xx:82:xx:ca:
+                    0a:xx:1a:xx:ca:xx:51:xx:35:xx:65:xx:6b:xx:a5:
+                    0a:xx:73:xx:50:xx:b0:xx:c9:xx:f8:xx:a2:xx:b0:
+                    e6:xx:d4:xx:61:xx:f4:xx:3e:xx:f1:xx:43:xx:02:
+                    14:xx:e1:xx:0d:xx:5d:xx:49:xx:b8:xx:18:xx:3f:
+                    79:xx:73:xx:62:xx:10:xx:9f:xx:71:xx:e2:xx:d6:
+                    7a:xx:8d:xx:ef:xx:be:xx:16:xx:c6:xx:d2:xx:c2:
+                    f6:xx:02:xx:5c:xx:86:xx:e6:xx:22:xx:33:xx:7b:
+                    1b:xx:f4:xx:8e:xx:9b:xx:f3:xx:82:xx:26:xx:4d:
+                    34:07
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                6E:xx:D4:xx:7C:xx:EF:xx:22:xx:73:xx:C9:xx:2C:xx:BE:xx:89:12
+            X509v3 Authority Key Identifier: 
+                keyid:xx:C7:xx:40:xx:39:xx:2D:xx:49:xx:CF:xx:03:xx:63:xx:C9:xx:A3
+
+    Signature Algorithm: sha1WithRSAEncryption
+         7b:xx:39:xx:57:xx:6f:xx:a1:xx:a4:xx:53:xx:d0:xx:e9:xx:
+         41:xx:d5:xx:5a:xx:df:xx:8b:xx:ae:xx:d8:xx:5d:xx:eb:xx:
+         68:xx:78:xx:98:xx:85:xx:9a:xx:57:xx:96:xx:b8:xx:9e:xx:
+         3e:xx:7b:xx:43:xx:ef:xx:b3:xx:96:xx:e1:xx:8f:xx:e6:xx:
+         83:xx:bf:xx:f8:xx:37:xx:81:xx:ad:xx:49:xx:55:xx:ca:xx:
+         27:xx:b3:xx:9e:xx:29:xx:57:xx:02:xx:36:xx:0b:xx:54:xx:
+         b5:xx:95:xx:82:xx:f1:xx:cb:xx:84:xx:c7:xx:31:xx:ed:xx:
+         17:21

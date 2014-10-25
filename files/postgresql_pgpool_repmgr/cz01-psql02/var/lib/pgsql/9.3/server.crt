@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=CZ, ST=Czech Republic, O=Example, Inc., L=Brno, CN=example.com Certificate Authority
+        Validity
+            Not Before: Oct 23 09:xx:51 2014 GMT
+            Not After : Oct 23 09:xx:51 2015 GMT
+        Subject: C=CZ, ST=Czech Republic, L=Brno, O=Example, OU=Deployment, CN=cz01-psql02.example.com/emailAddress=root@example.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:xx:48:xx:a8:xx:de:xx:8a:xx:9d:xx:b5:xx:d8:
+                    6d:xx:6d:xx:55:xx:9d:xx:77:xx:01:xx:ad:xx:07:
+                    1d:xx:e9:xx:e1:xx:58:xx:a7:xx:54:xx:c3:xx:ed:
+                    a7:xx:fb:xx:1b:xx:46:xx:c8:xx:57:xx:d5:xx:96:
+                    bb:xx:f5:xx:57:xx:08:xx:8c:xx:d7:xx:ff:xx:73:
+                    d0:xx:4e:xx:a2:xx:a6:xx:fa:xx:53:xx:d3:xx:44:
+                    c0:xx:ca:xx:f3:xx:12:xx:42:xx:25:xx:2c:xx:93:
+                    a0:xx:bf:xx:72:xx:b7:xx:6f:xx:ef:xx:e9:xx:d0:
+                    1e:xx:9e:xx:25:xx:39:xx:f9:xx:05:xx:29:xx:2d:
+                    53:xx:3a:xx:bc:xx:b9:xx:c8:xx:f5:xx:d6:xx:d0:
+                    77:xx:60:xx:9d:xx:62:xx:00:xx:80:xx:ee:xx:d0:
+                    14:xx:a6:xx:34:xx:82:xx:a6:xx:7b:xx:37:xx:66:
+                    99:xx:2d:xx:4a:xx:41:xx:83:xx:46:xx:f4:xx:62:
+                    58:xx:bb:xx:44:xx:01:xx:d0:xx:45:xx:f6:xx:d3:
+                    25:xx:51:xx:ba:xx:8e:xx:9b:xx:ef:xx:b9:xx:ac:
+                    b4:xx:a2:xx:f4:xx:6f:xx:2c:xx:cb:xx:47:xx:75:
+                    15:xx:7e:xx:3b:xx:1e:xx:e1:xx:a4:xx:74:xx:49:
+                    1b:bd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                1E:xx:99:xx:6F:xx:64:xx:23:xx:3A:xx:78:xx:A7:xx:2C:xx:6D:4E
+            X509v3 Authority Key Identifier: 
+                keyid:xx:C7:xx:40:xx:39:xx:2D:xx:49:xx:CF:xx:03:xx:63:xx:C9:xx:A3
+
+    Signature Algorithm: sha1WithRSAEncryption
+         b3:xx:fb:xx:fa:xx:cc:xx:d8:xx:f4:xx:0d:xx:1b:xx:d9:xx:
+         cf:xx:8e:xx:b9:xx:15:xx:84:xx:69:xx:d7:xx:59:xx:57:xx:
+         02:xx:69:xx:d4:xx:a1:xx:9c:xx:b1:xx:fe:xx:b8:xx:95:xx:
+         b4:xx:0e:xx:db:xx:93:xx:97:xx:ee:xx:e2:xx:38:xx:1a:xx:
+         53:xx:c8:xx:d7:xx:70:xx:e2:xx:e8:xx:26:xx:0a:xx:0a:xx:
+         50:xx:26:xx:a5:xx:c6:xx:5f:xx:aa:xx:92:xx:9d:xx:9c:xx:
+         f4:xx:07:xx:09:xx:60:xx:fb:xx:6d:xx:7a:xx:6b:xx:c8:xx:
+         cb:39
+-----BEGIN CERTIFICATE-----
+MIIDsxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxXcs5
+-----END CERTIFICATE-----
