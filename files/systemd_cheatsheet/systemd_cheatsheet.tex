@@ -28,7 +28,7 @@
 
 {\huge Systemd Cheatsheet}
 
-\vspace{8mm}
+\vspace{7mm}
 \small
 
 \begin{tabularx}{\textwidth}{ |l|X|X| }
@@ -78,12 +78,15 @@ emergency                   & emergency.target                                  
 \tt journalctl -b -p err                                & Show all messages of priority levels ERROR (4) and worse, from the current boot. \\\hline
 \tt journalctl -p warning --since="2014-06-14 23:59:59" &  View the warning or higher priority messages from certain point in time. \\\hline
 \tt journalctl -f                                       & Follow new messages. \\\hline
+\tt journalctl -u SERVICE                               & Show only log of SERVICE. \\\hline
 \tt journalctl /usr/sbin/httpd                          & Show all messages by a specific executable. \\\hline
 \tt journalctl --full                                   & Display full (= not truncated) messages. \\\hline
 \tt systemctl --state=failed                            & Lets find the systemd services which fail to start. \\\hline
 \tt systemctl list-units --type=target                  & Show current runlevel. \\\hline
 \tt systemctl isolate graphical.target                  & Changes the current target (runlevel). \\\hline
 \tt systemctl rescue/emergency                          & Changing to Rescue(single user mode)/Emergency Mode. \\\hline
+\tt systemctl kill SERVICE.service                      & Kill SERVICE (all processes) with SIGTERM. \\\hline
+\tt systemctl --failed                                  & List failed services on boot. \\\hline
 \tt systemd-cgls                                        & cgroup tree \\\hline
 \tt systemctl show -p "Wants" multi-user.target         & What other units does a unit depend on? \\\hline
 \tt systemctl list-jobs                                 & Check for possibly stuck jobs use. \\\hline
@@ -105,10 +108,10 @@ emergency                   & emergency.target                                  
 
 
 % Footer
-\vfill \hrule\smallskip
-{\tiny 
-This card may be freely distributed under the terms of the GNU general public licence
-}
+%\vfill \hrule\smallskip
+%{\tiny 
+%This card may be freely distributed under the terms of the GNU general public licence
+%}
 
 \end{center}
 \end{document}

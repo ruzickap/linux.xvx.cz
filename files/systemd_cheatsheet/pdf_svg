@@ -1,2 +1,2 @@
 #!/bin/bash
-make clean && make pdf && make svg
+make clean && make pdf && make svg && make dvi
