@@ -90,6 +90,7 @@ emergency                   & emergency.target                                  
 \tt systemd-cgls                                        & cgroup tree \\\hline
 \tt systemctl show -p "Wants" multi-user.target         & What other units does a unit depend on? \\\hline
 \tt systemctl list-jobs                                 & Check for possibly stuck jobs use. \\\hline
+\tt systemctl list-dependencies                         & Show units and it's dependencies. \\\hline
 \end{tabularx}
 
 \vspace{6mm}
@@ -109,7 +110,7 @@ emergency                   & emergency.target                                  
 
 % Footer
 %\vfill \hrule\smallskip
-%{\tiny 
+%{\tiny
 %This card may be freely distributed under the terms of the GNU general public licence
 %}
 
