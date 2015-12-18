@@ -1,0 +1,201 @@
+\documentclass[a4paper]{article}
+
+\usepackage[table]{xcolor}
+\usepackage{multicol}
+
+\usepackage{menukeys}
+
+\usepackage[
+             citecolor=red,backref,bookmarks,
+             pdfpagemode=None,
+             pdftitle={Atom Cheatsheet},
+             pdfauthor={PetrR},
+             pdfsubject={Atom Cheatsheet},
+             pdfkeywords={Atom Cheatsheet, Refcard, Cheat Sheet, Atom},
+             pdfview=FitB
+]{hyperref}
+
+\title{Atom Cheatsheet}
+
+\pagestyle{empty}
+
+\addtolength{\voffset}{-3.5cm}
+\addtolength{\textheight}{7cm}
+\addtolength{\hoffset}{-3.7cm}
+\addtolength{\textwidth}{7.4cm}
+
+% -----------------------------------------------------------------------
+
+\begin{document}
+\begin{center}
+
+{\huge Atom Cheatsheet}
+
+\vspace{5mm}
+\small
+
+\begin{multicols*}{2}
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries General}\\ \hline
+\keys{Ctrl + Shift + \textbf{p}}                         & Toggle command \textbf{p}alette \\ \hline
+\keys{Alt + Shift + \textbf{s}}                          & Show available code \textbf{s}nippets \\ \hline
+\keys{Alt + \textbackslash}                              & Toggle focus\\ \hline
+\keys{Ctrl + ,}                                          & Settings \\ \hline
+
+\keys{Ctrl + \textbf{q}}                                 & \textbf{Q}uit Atom \\ \hline
+
+\keys{Ctrl + Shift + \textbf{n}}                         & \textbf{N}ew window \\ \hline
+\keys{Ctrl + Shift + \textbf{w}}                         & Close current \textbf{w}indow\\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries File Management}\\ \hline
+\keys{Ctrl + \textbf{n}}                                 & \textbf{N}ew file \\ \hline
+\keys{Ctrl + \textbf{s}}                                 & \textbf{S}ave file \\ \hline
+\keys{Ctrl + Shift + \textbf{s}}                         & \textbf{S}ave as \\ \hline
+\keys{Ctrl + \textbf{w}}                                 & Close file \\ \hline
+\keys{Alt + Shift + o}                                   & Add project folder\\ \hline
+
+\keys{Ctrl + \textbf{b}}                                 & \textbf{B}rowse tabs \\ \hline
+\keys{Ctrl + PgDown} / \keys{PgUp}                       & Switch next/previous tab \\ \hline
+\keys{Alt + 1,2,3\dots}                                  & Switch to 1,2,3\dots tab \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Editing Lines}\\ \hline
+\keys{Ctlr + left} / \keys{right}                        & Move backward/forward one word \\ \hline
+\keys{Ctrl + Shift + left} / \keys{right}                & Select backward/forward one word \\ \hline
+\keys{Ctrl + Backspace} / \keys{Del}                     & Delete to the beginning/end of word \\ \hline
+
+\keys{Ctrl + Home}                                       & Go to begining \\ \hline
+\keys{Ctrl + End}                                        & Go to end \\ \hline
+\keys{Ctrl + Right}                                      & Next word \\ \hline
+\keys{Ctrl + Left}                                       & Previous word \\ \hline
+\keys{Ctrl + \textbf{m}}                                 & Go to \textbf{m}atching bracket \\ \hline
+
+\keys{Ctrl + \textbf{g}}                                 & \textbf{G}o to line \\ \hline
+\keys{Ctrl + Shift + \textbf{d}}                         & \textbf{D}uplicate line \\ \hline
+\keys{Ctrl + Enter}                                      & New line below \\ \hline
+\keys{Ctrl + Shift + Enter}                              & New line above \\ \hline
+\keys{Ctrl + Shift + k}                                  & Delete line \\ \hline
+\keys{Ctrl + Up} / \keys{Down}                             & Move line up/down \\ \hline
+\keys{Ctrl + \textbf{j}}                                 & \textbf{J}oin lines \\ \hline
+\keys{Ctrl + /}                                          & Comment line \\ \hline
+
+\keys{Ctrl + \textbf{l}}                                 & Se\textbf{l}ect line \\ \hline
+\keys{Ctrl + Alt + \textbf{m}}                           & Select code inside \textbf{m}atching brackets \\ \hline
+\keys{Ctrl + \textbf{a}}                                 & Select \textbf{a}ll \\ \hline
+\keys{Ctrl + Shift + Home}                               & Select to begining \\ \hline
+\keys{Ctrl + Shift + End}                                & Select to end \\ \hline
+
+\keys{Alt + Shift + Down}                                & Add selection below \\ \hline
+
+\keys{Ctrl + Ins}                                        & Copy selection \\ \hline
+\keys{Shift + Ins}                                       & Paste \\ \hline
+
+\keys{Ctrl + z}                                          & Undo \\ \hline
+\keys{Ctrl + Shift + z}                                  & Redo \\ \hline
+
+\keys{Ctrl + [} / \keys{]}                               & Indent/outdent selected lines \\ \hline
+
+\keys{Ctrl + Shift + F2}                                 & Set/Remove bookmark \\ \hline
+\keys{F2}                                                & Goto next bookmark \\ \hline
+\keys{Shift + F2}                                        & Goto previous bookmark \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Find and Replace}\\ \hline
+\keys{Ctrl + \textbf{f}}                                 & \textbf{F}ind in current file \\ \hline
+\keys{Ctrl + Shift + \textbf{f}}                         & \textbf{F}ind in project \\ \hline
+\keys{F3}                                                & Find next \\ \hline
+\keys{Shift + F3}                                        & Find previous \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries View}\\ \hline
+\keys{Ctrl+Shift+{+}} / \keys{--}                        & Increase/decrease text size \\ \hline
+\keys{Ctrl + 0}                                          & Reset text size \\ \hline
+\keys{F11}                                               & Toggle fullscreen \\ \hline
+\keys{Ctrl + k}, then \keys{down} / \keys{up}            & Split panes vertically  \\ \hline
+\keys{Ctrl + k}, then \keys{right} / \keys{left}         & Split panes horizontally \\ \hline
+\keys{Ctrl + k}, then \keys{Ctrl + right} / \keys{left}  & Focus pane right/left \\ \hline
+\keys{Ctrl + k}, then \keys{Ctrl + up} / \keys{down}     & Focus pane up/down \\ \hline
+\keys{Ctrl + $\backslash$}                               & Toggles file tree view\\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Tree View}\\ \hline
+\keys{\textbf{Del}} or \keys{Backspace}                  & \textbf{Del}ete current item \\ \hline
+\keys{\textbf{m}} or \keys{F2}                           & \textbf{M}ove selected item \\ \hline
+\keys{\textbf{d}}                                        & \textbf{D}uplicate selected item \\ \hline
+\keys{\textbf{a}}                                        & \textbf{A}dd new file \\ \hline
+\keys{Shift + \textbf{a}}                                & \textbf{A}dd new folder \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Github Integration}\\ \hline
+\keys{Alt + g}, then \keys{\textbf{b}}                   & Open on Github: \textbf{b}lame \\ \hline
+\keys{Alt + g}, then \keys{\textbf{c}}                   & Open on Github: \textbf{c}opy-url \\ \hline
+\keys{Alt + g}, then \keys{g}                            & Open on Github: repository \\ \hline
+\keys{Alt + g}, then \keys{\textbf{h}}                   & Open on Github: \textbf{h}istory \\ \hline
+\keys{Alt + g}, then \keys{\textbf{i}}                   & Open on Github: \textbf{i}ssues \\ \hline
+\keys{Alt + g}, then \keys{o}                            & Open on Github: file \\ \hline
+\keys{Alt + g}, then \keys{r}                            & Open on Github: branch-compare \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Git Plus}\\ \hline
+\keys{Ctrl + Shift + h}                                  & Run Git command \\ \hline
+\keys{Ctrl + Shift + \textbf{a}}                         & \textbf{A}dd \\ \hline
+\keys{Ctrl + Shift + x}                                  & Commit \\ \hline
+\keys{Ctrl + Shift + \textbf{a}}, then \keys{\textbf{c}} & \textbf{A}dd and \textbf{c}ommit \\ \hline
+\keys{Ctrl + Shift + \textbf{a}}, then \keys{\textbf{a}} & \textbf{A}dd \textbf{a}ll \\ \hline
+\keys{Ctrl + Shift +\textbf{a}}, then \keys{\textbf{p}}  & \textbf{A}dd all, commit and \textbf{p}ush \\ \hline
+\keys{Ctrl + Shift + \textbf{a}}, then \keys{\textbf{s}} & Show \textbf{S}tatus \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\begin{tabular}{|>{\rule{0pt}{0.85\normalbaselineskip}}l|l|}
+\hline
+\rowcolor[gray]{.8}
+\multicolumn{2}{|l|}{\bfseries Project Manager}\\ \hline
+\keys{Alt + Shift + p}                                   & List projects \\ \hline
+\keys{Ctrl + Shift + p}, then \keys{"save project"}      & Save project \\ \hline
+\end{tabular}
+
+\vspace{5mm}
+
+\end{multicols*}
+\end{center}
+\end{document}
