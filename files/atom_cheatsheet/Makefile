@@ -40,7 +40,7 @@ ${FILE}.ps: ${FILE}.dvi
 ${FILE}.pdf: ${FILE}.tex
 	${PDFLATEX} ${FILE}.tex
 #	${PDFLATEX} ${FILE}.tex
-	convert ${FILE}.pdf -density 300x300 -quality 90 ${FILE}.jpg
+	convert -density 300x300 ${FILE}.pdf  -quality 90 ${FILE}.jpg
 	
 ${FILE}.dvi: ${FILE}.tex 
 	${LATEX} ${FILE}.tex
